@@ -148,6 +148,32 @@ tr:last-child td{border-bottom:none}
 </div>
 </header>
 
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for Codex Workflows Moved Into Telegram and Discord" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>Codex Workflows Moved Into Telegram and Discord operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#F97316" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#F97316">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Coding agent surface</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-6452316466198740880" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#F97316"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">developer</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-6452316466198740880)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#F97316" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">Codex app server</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-6452316466198740880)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">reviewable change</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">repo context</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">task request</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">app server</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">diff/review</text>
+<rect x="58" y="312" width="704" height="2" fill="#F97316" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">Coding agents become useful when they move from chat replies to inspectable workspace operations.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
+
 <div class="callout callout-info">
 <div class="callout-title">Timeline note</div>
 <p>This March post covers a third-party OpenClaw workflow source, not a core OpenClaw release. The source is <a href="https://github.com/pwrdrvr/openclaw-codex-app-server" target="_blank" rel="noopener">pwrdrvr/openclaw-codex-app-server</a>, a TypeScript plugin for connecting OpenClaw chat channels to the Codex App Server protocol.</p>
@@ -188,6 +214,9 @@ tr:last-child td{border-bottom:none}
 </div>
 <h2>The practical takeaway</h2>
 <p>The durable OpenClaw pattern here is “chat as request queue, local agent server as executor, repo as source of truth, PR as review boundary.” Telegram and Discord are not the product. The product is the operating loop around a coding agent: explicit context, visible controls, safe interruption, and reviewable output.</p>
+<h2>How I would read the diagram</h2>
+<p>The shift from chat to app server matters because code work needs state. A serious coding agent has to know the repo, run commands, inspect diffs, preserve context, and show what changed. A chat transcript alone is not enough operating surface.</p>
+<p>The practical standard is reviewability. If the agent proposes a change, the developer should be able to see the branch, the files touched, the tests run, and the assumptions made. Without that, the agent is not improving software delivery. It is just making confident text near a codebase.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/pwrdrvr/openclaw-codex-app-server" target="_blank" rel="noopener"><div class="source-title">pwrdrvr/openclaw-codex-app-server</div><div class="source-url">https://github.com/pwrdrvr/openclaw-codex-app-server</div></a></div>
 

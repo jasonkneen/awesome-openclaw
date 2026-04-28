@@ -148,6 +148,32 @@ tr:last-child td{border-bottom:none}
 </div>
 </header>
 
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for Web Data Plugins Are Useful, But They Need Guardrails" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>Web Data Plugins Are Useful, But They Need Guardrails operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#EF4444" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#EF4444">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Web data boundary</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-573472740876557379" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#EF4444"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">web source</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-573472740876557379)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#EF4444" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">data plugin</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-573472740876557379)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">bounded context</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">source</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">policy</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">fetch</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">retain/discard</text>
+<rect x="58" y="312" width="704" height="2" fill="#EF4444" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">The useful web-data plugin is the one that can say what it fetched, why it fetched it, and what it did not keep.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
+
 <div class="callout callout-info"><div class="callout-title">Timeline note</div><p>This post covers the Bright Data OpenClaw plugin and docs published around the late-March ecosystem window: <a href="https://github.com/brightdata/openclaw-plugin" target="_blank" rel="noopener">brightdata/openclaw-plugin</a> and Bright Data's OpenClaw integration guide.</p></div>
 <h2>Web access is where agent risk stops being theoretical</h2>
 <p>A local automation agent that reads files is already powerful. A web data plugin that adds search, scraping, browser automation, residential proxy infrastructure, and structured data tools changes the blast radius. The Bright Data plugin is useful precisely because it makes that shift visible.</p>
@@ -178,6 +204,14 @@ tr:last-child td{border-bottom:none}
 </div>
 <h2>The practical takeaway</h2>
 <p>Bright Data's plugin is a serious capability, not just another directory item. It makes OpenClaw more useful for fresh research and structured web workflows, but it also forces operators to treat web access like production infrastructure: scoped credentials, explicit policy, rate controls, logs, and source provenance.</p>
+<h2>How I would read the diagram</h2>
+<p>Web data is where agent systems can become sloppy very quickly. A plugin that fetches a page, a search result, or a structured dataset should not be treated as neutral plumbing. It decides what enters context, what gets summarized, and what might be stored.</p>
+<p>That is why the safety work is part of the product, not a legal appendix. The plugin should have rate limits, source visibility, retention rules, and failure messages that a user can understand. If those pieces are missing, the agent may look smarter while becoming harder to trust.</p>
+<h2>What would make this real</h2>
+<p>The practical test is whether the integration can be operated on a bad day. A good demo shows the happy path. A real OpenClaw component should show the boundary conditions: what happens when the source is slow, when the account changes, when the model is unsure, when the tool returns partial data, and when the user asks for something outside the allowed scope.</p>
+<p>That is why I keep coming back to the same operator questions: who owns the credential, where does the state live, what is logged, how is failure shown, and how does a human override the agent? If those answers are visible, the integration can be trusted gradually. If they are hidden, even a useful feature becomes hard to recommend.</p>
+<h2>The product bar I would use</h2>
+<p>I would not judge this by whether it can answer one impressive prompt. I would judge it by repeatability. Can another maintainer set it up from the docs? Can a user predict when the agent will act and when it will ask? Can the system explain what changed after an update? These are the small details that decide whether an agent project feels like infrastructure or a weekend automation.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/brightdata/openclaw-plugin" target="_blank" rel="noopener"><div class="source-title">brightdata/openclaw-plugin</div><div class="source-url">https://github.com/brightdata/openclaw-plugin</div></a></div>
 <div class="source-ref"><a href="https://docs.brightdata.com/integrations/openclaw" target="_blank" rel="noopener"><div class="source-title">Set Up Bright Data With OpenClaw</div><div class="source-url">https://docs.brightdata.com/integrations/openclaw</div></a></div>
