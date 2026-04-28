@@ -149,100 +149,126 @@ tr:last-child td{border-bottom:none}
 </header>
 
 <figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
-<svg role="img" aria-label="Diagram for Coding Agents Are Becoming ChatOps Workflows" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
-<title>Coding Agents Are Becoming ChatOps Workflows operating map</title>
-<rect width="820" height="360" fill="#070707"/>
-<circle cx="72" cy="64" r="30" fill="#22C55E" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#22C55E">1</text>
-<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">ChatOps coding loop</text>
-<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
-<defs><marker id="arrow-6813271296086098967" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#22C55E"/></marker></defs>
-<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
-<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">chat request</text>
-<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
-<line x1="256" y1="175" x2="342" y2="175" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow-6813271296086098967)"/>
-<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#22C55E" stroke-width="2"/>
-<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">coding agent</text>
-<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
-<line x1="574" y1="175" x2="646" y2="175" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow-6813271296086098967)"/>
-<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
-<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">PR/review</text>
-<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
-<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">issue</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">agent task</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">branch</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">review</text>
-<rect x="58" y="312" width="704" height="2" fill="#22C55E" opacity=".65"/>
-<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">ChatOps works for coding agents only when chat becomes a command surface for reviewable work.</text>
+<svg role="img" aria-label="ChatOps workflow for coding agents" viewBox="0 0 920 430" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>ChatOps workflow for coding agents</title>
+<rect width="920" height="430" fill="#070707"/>
+<defs>
+<marker id="chatops-arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#22C55E"/></marker>
+<style>
+.t{font-family:Inter,Arial,sans-serif}.m{font-family:JetBrains Mono,monospace}.box{fill:#101010;stroke:#2d2d2d;stroke-width:1.6}.focus{fill:#101410;stroke:#22C55E;stroke-width:2}.muted{fill:#bdbdbd}.white{fill:#f5f5f5}.green{fill:#22C55E}
+</style>
+</defs>
+<circle cx="68" cy="62" r="30" fill="#22C55E" opacity=".15"/><text x="68" y="70" text-anchor="middle" class="t green" font-size="26" font-weight="800">1</text>
+<text x="116" y="58" class="t white" font-size="25" font-weight="850">Coding agents as ChatOps workflows</text>
+<text x="116" y="86" class="m muted" font-size="15">chat is the control surface, not the execution environment</text>
+<rect x="48" y="126" width="150" height="82" rx="18" class="box"/><text x="123" y="160" text-anchor="middle" class="t white" font-size="18" font-weight="800">Chat thread</text><text x="123" y="185" text-anchor="middle" class="m muted" font-size="13">Telegram / Discord</text>
+<line x1="208" y1="167" x2="278" y2="167" stroke="#22C55E" stroke-width="3" marker-end="url(#chatops-arrow)"/>
+<rect x="288" y="110" width="180" height="114" rx="22" class="focus"/><text x="378" y="150" text-anchor="middle" class="t white" font-size="19" font-weight="900">OpenClaw bridge</text><text x="378" y="178" text-anchor="middle" class="m muted" font-size="13">bind • route • guard</text><text x="378" y="202" text-anchor="middle" class="m green" font-size="13">/cas_resume</text>
+<line x1="478" y1="167" x2="548" y2="167" stroke="#22C55E" stroke-width="3" marker-end="url(#chatops-arrow)"/>
+<rect x="558" y="126" width="150" height="82" rx="18" class="box"/><text x="633" y="160" text-anchor="middle" class="t white" font-size="18" font-weight="800">Codex thread</text><text x="633" y="185" text-anchor="middle" class="m muted" font-size="13">local CLI state</text>
+<line x1="718" y1="167" x2="788" y2="167" stroke="#22C55E" stroke-width="3" marker-end="url(#chatops-arrow)"/>
+<rect x="798" y="126" width="82" height="82" rx="18" class="box"/><text x="839" y="160" text-anchor="middle" class="t white" font-size="16" font-weight="800">PR</text><text x="839" y="185" text-anchor="middle" class="m muted" font-size="12">review</text>
+<rect x="72" y="265" width="148" height="52" rx="14" class="box"/><text x="146" y="297" text-anchor="middle" class="m white" font-size="14">explicit owner</text>
+<rect x="246" y="265" width="148" height="52" rx="14" class="box"/><text x="320" y="297" text-anchor="middle" class="m white" font-size="14">thread binding</text>
+<rect x="420" y="265" width="148" height="52" rx="14" class="box"/><text x="494" y="297" text-anchor="middle" class="m white" font-size="14">permission mode</text>
+<rect x="594" y="265" width="148" height="52" rx="14" class="box"/><text x="668" y="297" text-anchor="middle" class="m white" font-size="14">stop / compact</text>
+<rect x="768" y="265" width="100" height="52" rx="14" class="box"/><text x="818" y="297" text-anchor="middle" class="m white" font-size="14">audit</text>
+<rect x="48" y="356" width="832" height="2" fill="#22C55E" opacity=".65"/>
+<text x="464" y="383" text-anchor="middle" class="t white" font-size="16">Good ChatOps turns chat requests into bounded, reviewable software work.</text>
 </svg>
-<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">The important boundary is not the chat app. It is the binding between a human request, an agent thread, a local execution environment, and a reviewable artifact.</figcaption>
 </figure>
-<div class="callout callout-info">
-<div class="callout-title">Timeline note</div>
-<p>Reviewed for the April OpenClaw ecosystem batch. The public source is the <a href="https://github.com/pwrdrvr/openclaw-codex-app-server" target="_blank" rel="noopener">pwrdrvr/openclaw-codex-app-server</a> repository and package docs, not a private roadmap or vendor claim.</p>
-<p>The useful signal is narrow: builders are trying to operate coding agents from team chat surfaces while keeping the underlying Codex thread, model choices, and permissions visible.</p>
-</div>
 
-<p><strong>ChatOps is becoming a control plane for coding agents.</strong> The point is not that a bot can reply in Telegram or Discord. The point is that a chat channel can become the place where a developer binds a repository thread, starts or resumes work, changes model settings, stops a run, and leaves an audit trail other humans can read.</p>
+<p><strong>Coding agents are moving from private terminals into shared workflow surfaces.</strong> That is the real signal behind the OpenClaw Codex App Server plugin. It is not interesting because it lets someone type to an agent from Telegram or Discord. That part is obvious. It is interesting because it turns a chat conversation into a control surface for a real coding thread, with project selection, thread binding, model controls, permission controls, stop buttons, context compaction, and review commands around it.</p>
 
-<p>The OpenClaw Codex App Server plugin is a good April signal because it is specific. It bridges Telegram and Discord conversations to Codex App Server / local Codex CLI threads. If Codex already works on the host machine, the plugin uses that local CLI and login state; it is not a separate hosted coding service. The README also says plainly that it is independent and not official OpenAI or Codex software.</p>
+<p>The larger developer ecosystem is moving in the same direction. GitHub describes ChatOps for agentic workflows as slash-command automation inside issues, pull requests, and comments. GitHub's Slack integration for Copilot coding agent lets developers mention GitHub in a Slack thread and receive a pull request back for review. OpenAI's Codex docs describe a coding agent that can run in an IDE, CLI, cloud task, or remote app-server setup. The pattern is clear: the agent is an execution worker that needs a collaboration surface, permissions model, and review path.</p>
 
-<h2>What the source actually shows</h2>
+<h2>The short version</h2>
+<p>The old developer workflow was private: open terminal, run a tool, inspect output, commit code. The new workflow is shared. A task starts in chat, continues inside a bound agent thread, runs on a host with the repository, then returns as a branch, pull request, plan, review, or status update. The chat message is only the front door. The useful work happens when the integration keeps the agent run bounded and inspectable.</p>
+
+<h2>What the OpenClaw plugin actually shows</h2>
 <div class="table-wrap">
 <table>
 <thead><tr><th>Area</th><th>Observed detail</th></tr></thead>
 <tbody>
-<tr><td>Repository</td><td><code>pwrdrvr/openclaw-codex-app-server</code></td></tr>
-<tr><td>Purpose</td><td>OpenClaw plugin connecting Telegram / Discord conversations to Codex App Server and Codex CLI threads.</td></tr>
-<tr><td>Language and package</td><td>Mostly TypeScript, distributed as <code>openclaw-codex-app-server</code> on npm.</td></tr>
-<tr><td>Public maturity signal</td><td>GitHub showed releases, compatibility notes, an MIT license, and a latest release in early April 2026 at review time.</td></tr>
-<tr><td>Important caveat</td><td>OpenClaw flags the install as unsafe because the plugin must launch <code>codex app-server</code>; that is the core bridge, not an incidental permission.</td></tr>
+<tr><td>Project</td><td><code>pwrdrvr/openclaw-codex-app-server</code>, an OpenClaw plugin for connecting Telegram and Discord conversations to Codex App Server / Codex CLI threads.</td></tr>
+<tr><td>Execution model</td><td>It uses the local Codex CLI and existing login state. If <code>codex</code> already works on the OpenClaw host, the plugin can reuse that setup.</td></tr>
+<tr><td>Core flow</td><td>Install plugin, run <code>/cas_resume</code> in Telegram or Discord, choose a recent or new thread, then route plain chat messages into the selected Codex thread.</td></tr>
+<tr><td>Controls</td><td>Project and thread selection, model switching, reasoning selection, fast mode, permission mode, skill shortcuts, compaction, stopping active runs, planning mode, workspace review, MCP server listing, and Codex skill listing.</td></tr>
+<tr><td>Safety signal</td><td>OpenClaw flags installation as unsafe because the plugin must launch <code>codex app-server</code>. That warning matters. The spawned process is the bridge.</td></tr>
+<tr><td>Status</td><td>Public repository, MIT license, TypeScript-heavy codebase, npm package, release and compatibility notes across OpenClaw versions around late March and early April 2026.</td></tr>
 </tbody>
 </table>
 </div>
 
-<h2>The architecture pattern</h2>
-<p>A useful chat-native coding workflow has five parts:</p>
+<p>The strongest detail is not the command list. It is the fact that ambiguous filters produce a picker instead of guessing. That small product decision tells you what good agent UX should look like. When a chat message can become a repository action, ambiguity should be surfaced to the human instead of silently resolved by the bot.</p>
+
+<h2>Why this matters now</h2>
+<p>Most teams already use chat as the place where work is negotiated. Bugs are reported there. Screenshots land there. Production incidents start there. Engineers paste logs, links, and half-formed ideas into a channel before they ever become an issue or a pull request. So it is natural that coding agents will be pulled into the same surface.</p>
+
+<p>But chat is dangerous when it becomes too powerful. A channel is noisy, social, and persistent. People speak casually. They paste secrets by mistake. They tag the wrong thread. They assume someone else has context. If a coding agent treats every message as a clean instruction, the workflow will fail. A good ChatOps agent has to add friction at the right places: explicit binding, visible current project, permission mode display, stop controls, and a clear handoff into review.</p>
+
+<p>This is where the OpenClaw plugin is useful as an ecosystem signal. It does not pretend the chat app is the coding environment. Chat handles conversation and control. Codex handles repository reasoning and execution. OpenClaw connects them.</p>
+
+<h2>The wrong read</h2>
+<p>The wrong read is: “Now developers can code from Telegram.” That is too shallow. Developers do not need more places to type prompts. They need fewer broken handoffs between the place where a task is discussed and the place where code changes are reviewed.</p>
+
+<p>The better question is: can the workflow preserve intent from the original chat thread all the way to the pull request? Can it show which project was selected? Can it show which Codex thread received the request? Can it stop a bad run before it writes too much? Can it keep a transcript that helps reviewers understand why a change exists? If the answer is no, the chat bot is only a novelty.</p>
+
+<h2>The operating model I would expect</h2>
+<ol>
+<li><strong>Start with a bounded task.</strong> A human asks for a fix, investigation, refactor, or test addition in a channel where the team already has context.</li>
+<li><strong>Bind the task to a project and thread.</strong> The bot should show the current repository, workspace, Codex thread, and active mode before it routes work.</li>
+<li><strong>Expose controls inline.</strong> Model, reasoning level, permission mode, compaction, planning, and stop actions should be available without hiding them in config files.</li>
+<li><strong>Return reviewable artifacts.</strong> The output should be a branch, PR, plan, diff, test result, or review summary, not just “done.”</li>
+<li><strong>Keep the audit trail readable.</strong> A teammate should be able to look at the chat later and understand who asked for work, what agent thread ran, and what changed.</li>
+</ol>
+
+<h2>Risks builders should not ignore</h2>
 <ul>
-<li><strong>Identity and binding:</strong> a channel, user, or thread must be bound to a specific Codex thread or project. The plugin exposes resume, new-thread, and search flows instead of guessing silently.</li>
-<li><strong>Execution surface:</strong> the actual work still happens through the local Codex CLI / App Server path on the machine running OpenClaw.</li>
-<li><strong>Control messages:</strong> model selection, reasoning level, fast mode, permission mode, compaction, and stop controls matter because they make the bot operable instead of merely conversational.</li>
-<li><strong>Channel adapters:</strong> Telegram and Discord are not just transports. They provide buttons, pickers, conversation history, and shared visibility for teams.</li>
-<li><strong>Compatibility layer:</strong> the project documents OpenClaw plugin SDK changes across late March and early April, which is exactly the kind of maintenance burden chat adapters inherit.</li>
+<li><strong>Permission escalation:</strong> if a chat button can change permission mode, that control needs guardrails and visible defaults.</li>
+<li><strong>Thread confusion:</strong> a message sent to the wrong bound thread can create changes in the wrong project. The current binding should always be visible.</li>
+<li><strong>Host trust:</strong> because the bridge uses the local Codex setup, the OpenClaw host becomes part of the security boundary.</li>
+<li><strong>Chat retention:</strong> repository names, logs, errors, and partial output may persist in Telegram or Discord history.</li>
+<li><strong>Compatibility drift:</strong> channel SDKs, OpenClaw plugin interfaces, Codex CLI behavior, and app-server protocol details can all move. The compatibility matrix is a feature, but it also proves this surface needs maintenance.</li>
 </ul>
 
-<h2>Why this is not just “coding from chat”</h2>
-<p>Running an agent from a chat window is easy to hype and easy to misunderstand. The valuable part is operational: a request arrives where the team already talks, the agent run has a visible owner, and the stop / resume / selection controls sit next to the discussion. That can reduce context switching for long-running coding tasks.</p>
+<h2>How this compares to GitHub's ChatOps direction</h2>
+<p>GitHub's agentic workflow ChatOps pattern is more repository-native. Slash commands such as <code>/review</code> live inside issues, pull requests, and comments. Permissions can be restricted by repository role, and outputs can be constrained through safe operations such as review comments or summary comments.</p>
 
-<p>It can also make risk worse. A private terminal session has a small audience. A chat bot connected to an agent can turn casual messages into tool calls. That means the integration needs a stronger boundary than a normal notification bot.</p>
+<p>The OpenClaw plus Codex bridge starts from external chat, so it has to recreate some of that discipline: identity, command scope, allowed outputs, and review handoff. I do not see these as competing patterns. I see them as two versions of the same future: coding agents need command surfaces wherever teams coordinate.</p>
 
-<h2>Risks to inspect before adoption</h2>
+<h2>What OpenClaw should optimize for</h2>
+<p>OpenClaw is interesting here because it can become the adapter layer between human channels and agent runtimes. That means the product quality bar is not “can it send a message?” The bar is: can it make channel-native work safe enough for real engineering teams?</p>
+
+<p>For this category, I would optimize OpenClaw around four primitives:</p>
 <ul>
-<li><strong>Command scope:</strong> which chats are allowed to bind to which Codex projects, and can a user accidentally route a request to the wrong thread?</li>
-<li><strong>Permission mode:</strong> if permissions can be changed through chat controls, the allowed modes and defaults need to be obvious.</li>
-<li><strong>Host trust:</strong> the plugin relies on the machine where Codex already works. That host becomes the execution boundary and the incident boundary.</li>
-<li><strong>Secrets and screenshots:</strong> chat platforms preserve history. Error messages, paths, repository names, and model outputs may become visible to more people than intended.</li>
-<li><strong>Compatibility drift:</strong> the README's compatibility matrix is a strength, but it also proves the surface is moving. Teams should pin versions and keep a rollback path.</li>
+<li><strong>Bindings:</strong> explicit links between channel, user, repository, project, and agent thread.</li>
+<li><strong>Policies:</strong> clear defaults for who can start work, which commands are allowed, and what permission modes are available.</li>
+<li><strong>Artifacts:</strong> first-class branch, diff, PR, plan, and test-result handoffs.</li>
+<li><strong>Recovery:</strong> stop, resume, compact, rollback, and inspect flows that work from the same channel.</li>
 </ul>
 
 <div class="checklist">
 <h3>Adoption checklist</h3>
-<div class="checklist-item"><span class="checklist-box"></span><span>Bind each chat to an explicit project / thread and show the current binding before executing work.</span></div>
-<div class="checklist-item"><span class="checklist-box"></span><span>Keep the default permission mode conservative and require a visible human action to raise it.</span></div>
-<div class="checklist-item"><span class="checklist-box"></span><span>Log who requested work, which thread ran, which model / reasoning settings were used, and why a run stopped.</span></div>
-<div class="checklist-item"><span class="checklist-box"></span><span>Test failure paths: expired Codex login, broken Discord / Telegram payloads, ambiguous thread searches, and interrupted runs.</span></div>
-<div class="checklist-item"><span class="checklist-box"></span><span>Pin plugin and OpenClaw versions when using this as team infrastructure.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Show the active project and Codex thread before routing normal chat messages into an agent run.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Keep the default permission mode conservative, and make any elevation explicit in the chat history.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Return a reviewable artifact, not only a natural-language summary.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Test ambiguous search, expired Codex login, failed app-server launch, interrupted runs, and wrong-channel commands.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Decide what chat history can safely retain before using this with private repositories or production incidents.</span></div>
 </div>
-
-<h2>The practical signal</h2>
-<p>OpenClaw is attracting integrations that do not replace the agent core. They wrap it in the workflow surfaces developers already use: chat, observability, memory, hosting, and team coordination. That is a healthier ecosystem signal than another abstract demo, because it exposes the boring requirements: version compatibility, permission boundaries, UI affordances, and recovery paths.</p>
 
 <div class="callout callout-solution">
 <div class="callout-title">My takeaway</div>
-<p>Add this to the ecosystem map as a ChatOps / Codex App Server bridge, not as a generic “AI coding chatbot.” The useful question for builders is whether their agent needs shared control from Telegram or Discord, and whether they can operate that bridge safely.</p>
+<p>This belongs in the OpenClaw ecosystem map as a ChatOps control-plane pattern for coding agents. The important part is not that Telegram or Discord can talk to Codex. The important part is that chat becomes a bounded place to start, steer, stop, and review agentic software work.</p>
 </div>
 
-<h2>The review boundary matters</h2>
-<p>The cleanest ChatOps pattern is not a chat message that says “done.” It is a chat message that points to a reviewable artifact. For coding work, that usually means a branch, a pull request, a test run, a log, or a short explanation of what was intentionally not changed. Without that handoff, the team is forced to trust the agent’s summary instead of inspecting the work.</p>
-<p>This is also where humans stay in control without blocking every small step. The agent can explore, patch, and run checks, but the merge decision remains visible. That is a better social contract for teams: the agent does the noisy execution, the human keeps product judgment and final responsibility.</p>
-<h2>Source</h2>
+<h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/pwrdrvr/openclaw-codex-app-server" target="_blank" rel="noopener"><div class="source-title">pwrdrvr/openclaw-codex-app-server</div><div class="source-url">https://github.com/pwrdrvr/openclaw-codex-app-server</div></a></div>
+<div class="source-ref"><a href="https://www.npmjs.com/package/openclaw-codex-app-server" target="_blank" rel="noopener"><div class="source-title">openclaw-codex-app-server on npm</div><div class="source-url">https://www.npmjs.com/package/openclaw-codex-app-server</div></a></div>
+<div class="source-ref"><a href="https://github.github.com/gh-aw/patterns/chat-ops/" target="_blank" rel="noopener"><div class="source-title">GitHub Agentic Workflows: ChatOps pattern</div><div class="source-url">https://github.github.com/gh-aw/patterns/chat-ops/</div></a></div>
+<div class="source-ref"><a href="https://developers.openai.com/codex/cli/features" target="_blank" rel="noopener"><div class="source-title">OpenAI Developers: Codex CLI features</div><div class="source-url">https://developers.openai.com/codex/cli/features</div></a></div>
+<div class="source-ref"><a href="https://github.blog/changelog/2025-10-28-work-with-copilot-coding-agent-in-slack/" target="_blank" rel="noopener"><div class="source-title">GitHub Changelog: Copilot coding agent in Slack</div><div class="source-url">https://github.blog/changelog/2025-10-28-work-with-copilot-coding-agent-in-slack/</div></a></div>
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>
 <script>
