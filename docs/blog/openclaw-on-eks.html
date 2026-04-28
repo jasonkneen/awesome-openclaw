@@ -148,6 +148,32 @@ tr:last-child td{border-bottom:none}
 <span class="article-pill">Security</span>
 </div>
 </header>
+
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for OpenClaw on EKS Is a Signal, Not Just a Deployment Guide" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClaw on EKS Is a Signal, Not Just a Deployment Guide operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#F97316" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#F97316">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Kubernetes path</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-8571511239380693140" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#F97316"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">EKS cluster</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-8571511239380693140)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#F97316" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">OpenClaw deployment</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-8571511239380693140)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">operated service</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">cluster</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">secrets</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">pods</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">observability</text>
+<rect x="58" y="312" width="704" height="2" fill="#F97316" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">Kubernetes only helps if the agent runtime is packaged with clear secrets, health, and upgrade rules.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
 <div class="callout callout-info"><div class="callout-title">Research note</div><p>This post treats the linked OpenClaw project as a public ecosystem signal, not as proof of official endorsement or production maturity. The claims below are intentionally bounded: what the source appears to solve, what operators should verify, and which industry practices apply before a team depends on it.</p></div>
 <h2>Kubernetes is not the point</h2>
 <p>The important part of <strong>hitsub2/openclaw-on-eks</strong> is not that OpenClaw can be wrapped in Kubernetes YAML. Almost anything can. The important signal is that users are asking whether OpenClaw can fit into the same platform machinery teams already use for services: deployments, rollouts, secrets, ingress, IAM, logs, autoscaling, and policy.</p>
@@ -177,6 +203,14 @@ tr:last-child td{border-bottom:none}
 <div class="checklist-item"><span class="checklist-box"></span><span>NetworkPolicies restrict admin ingress and unnecessary outbound traffic.</span></div>
 <div class="checklist-item"><span class="checklist-box"></span><span>Rollbacks, logs, costs, and failed tool calls are visible to operators.</span></div>
 </div>
+<h2>How I would read the diagram</h2>
+<p>EKS changes the conversation from “can I run it?” to “can my platform team own it?” That brings useful primitives: scheduling, health checks, secrets, ingress, autoscaling, and observability. It also brings complexity that should not be added without a reason.</p>
+<p>For OpenClaw, the Kubernetes path makes sense when agents become shared infrastructure rather than a personal bot. Then the platform team needs manifests, resource requests, upgrade strategy, and failure isolation. Without those, Kubernetes just makes the demo more expensive.</p>
+<h2>What would make this real</h2>
+<p>The practical test is whether the integration can be operated on a bad day. A good demo shows the happy path. A real OpenClaw component should show the boundary conditions: what happens when the source is slow, when the account changes, when the model is unsure, when the tool returns partial data, and when the user asks for something outside the allowed scope.</p>
+<p>That is why I keep coming back to the same operator questions: who owns the credential, where does the state live, what is logged, how is failure shown, and how does a human override the agent? If those answers are visible, the integration can be trusted gradually. If they are hidden, even a useful feature becomes hard to recommend.</p>
+<h2>The product bar I would use</h2>
+<p>I would not judge this by whether it can answer one impressive prompt. I would judge it by repeatability. Can another maintainer set it up from the docs? Can a user predict when the agent will act and when it will ask? Can the system explain what changed after an update? These are the small details that decide whether an agent project feels like infrastructure or a weekend automation.</p>
 <h2>Sources</h2>
 <div class="source-ref">
 <a href="https://github.com/hitsub2/openclaw-on-eks" target="_blank" rel="noopener">
