@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lark and Feishu Made the Channel Story More Global</title>
-<meta name="description" content="The Lark/Feishu plugin is another sign that OpenClaw is becoming a messaging gateway, not just a bot project.">
+<meta name="description" content="The Lark/Feishu plugin shows OpenClaw moving into workspace-native agents, where chat is only the doorway to docs, records, calendars, tasks, and permission risk.">
 <meta property="og:title" content="Lark and Feishu Made the Channel Story More Global">
-<meta property="og:description" content="The Lark/Feishu plugin is another sign that OpenClaw is becoming a messaging gateway, not just a bot project.">
+<meta property="og:description" content="The Lark/Feishu plugin shows OpenClaw moving into workspace-native agents, where chat is only the doorway to docs, records, calendars, tasks, and permission risk.">
 <meta property="og:image" content="https://openclawsearch.com/og-image.png">
 <meta property="og:url" content="https://openclawsearch.com/blog/lark-feishu-channel-signal">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Lark and Feishu Made the Channel Story More Global">
-<meta name="twitter:description" content="The Lark/Feishu plugin is another sign that OpenClaw is becoming a messaging gateway, not just a bot project.">
+<meta name="twitter:description" content="The Lark/Feishu plugin shows OpenClaw moving into workspace-native agents, where chat is only the doorway to docs, records, calendars, tasks, and permission risk.">
 <meta name="twitter:image" content="https://openclawsearch.com/og-image.png">
 <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/pixel-lobster.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,100 +20,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#0A0A0A;
-  --bg-s1:#111111;
-  --bg-s2:#1A1A1A;
-  --text:#EDEDED;
-  --text-muted:#888888;
-  --card:rgba(255,255,255,0.05);
-  --card-border:rgba(255,255,255,0.08);
-  --primary:#DC2626;
-  --primary-light:#EF4444;
-  --link:#EF4444;
-  --link-hover:#DC2626;
-  --badge-bg:rgba(220,38,38,0.12);
-  --badge-text:#EF4444;
-  --green:#22C55E;
-  --green-bg:rgba(34,197,94,0.08);
-  --green-border:rgba(34,197,94,0.25);
-  --yellow:#F59E0B;
-  --yellow-bg:rgba(245,158,11,0.08);
-  --yellow-border:rgba(245,158,11,0.25);
-  --blue:#3B82F6;
-  --blue-bg:rgba(59,130,246,0.08);
-  --blue-border:rgba(59,130,246,0.25);
-  --nav-bg:rgba(10,10,10,0.8);
-}
-[data-theme="light"]{
-  --bg:#FAFAFA;
-  --bg-s1:#FFFFFF;
-  --bg-s2:#F5F5F5;
-  --text:#171717;
-  --text-muted:#666666;
-  --card:#FFFFFF;
-  --card-border:rgba(0,0,0,0.08);
-  --link:#DC2626;
-  --link-hover:#B91C1C;
-  --badge-bg:rgba(220,38,38,0.08);
-  --badge-text:#DC2626;
-  --nav-bg:rgba(250,250,250,0.85);
-  --green-bg:rgba(34,197,94,0.06);
-  --green-border:rgba(34,197,94,0.2);
-  --yellow-bg:rgba(245,158,11,0.06);
-  --yellow-border:rgba(245,158,11,0.2);
-  --blue-bg:rgba(59,130,246,0.06);
-  --blue-border:rgba(59,130,246,0.2);
-}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:16px;transition:background .3s,color .3s}
-.nav{position:sticky;top:0;z-index:100;background:var(--nav-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--card-border)}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px}
-.nav-logo{font-weight:800;font-size:1.1rem;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
-.nav-logo .claw{color:var(--primary)}
-.nav-actions{display:flex;align-items:center;gap:12px}
-.nav-link,.gh-link{color:var(--text-muted);text-decoration:none;font-size:.85rem;font-weight:500;padding:6px 14px;border-radius:8px;border:1px solid var(--card-border);transition:all .2s}
-.nav-link:hover,.nav-link.active,.gh-link:hover{color:var(--text);border-color:var(--primary)}
-.theme-toggle{background:var(--card);border:1px solid var(--card-border);color:var(--text);cursor:pointer;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
-.article{max-width:820px;margin:0 auto;padding:0 24px 80px}
-.article-header{padding:80px 0 48px;border-bottom:1px solid var(--card-border);margin-bottom:48px}
-.article-badge{display:inline-flex;align-items:center;gap:6px;background:var(--badge-bg);color:var(--badge-text);font-size:.8rem;font-weight:700;padding:4px 14px;border-radius:16px;margin-bottom:20px}
-.article-title{font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px}
-.article-title .hl{color:var(--primary)}
-.article-subtitle{font-size:1.2rem;color:var(--text-muted);margin-bottom:24px;line-height:1.5}
-.article-meta{display:flex;flex-wrap:wrap;align-items:center;gap:16px;color:var(--text-muted);font-size:.85rem}
-.article-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.article-pill{font-size:.75rem;padding:4px 12px;border-radius:6px;background:var(--card);border:1px solid var(--card-border);color:var(--text-muted);font-weight:500}
-.article h2{font-size:1.55rem;font-weight:800;letter-spacing:-0.02em;margin:52px 0 18px;padding-left:16px;border-left:4px solid var(--primary);line-height:1.3}
-.article h3{font-size:1.18rem;font-weight:750;margin:34px 0 12px;color:var(--text)}
-.article p{color:var(--text-muted);margin-bottom:18px;line-height:1.85}
-.article strong{color:var(--text);font-weight:650}
-.article a{color:var(--link);text-decoration:none;transition:color .2s}
-.article a:hover{color:var(--link-hover);text-decoration:underline}
-.article ul,.article ol{margin:0 0 22px 24px;color:var(--text-muted)}
-.article li{margin-bottom:8px;line-height:1.75}
-.article li strong{color:var(--text)}
-.article code{font-family:'JetBrains Mono',monospace;font-size:.85em;background:rgba(255,255,255,0.06);padding:2px 6px;border-radius:4px;color:var(--primary-light)}
-.callout{margin:24px 0;padding:20px 24px;border-radius:12px;border:1px solid var(--card-border);background:var(--bg-s1)}
-.callout-title{font-weight:750;font-size:.9rem;margin-bottom:8px;color:var(--text);display:flex;align-items:center;gap:8px}
-.callout-info{border-color:var(--blue-border);background:var(--blue-bg)}
-.callout-solution{border-color:var(--green-border);background:var(--green-bg)}
-.callout-tip{border-color:var(--yellow-border);background:var(--yellow-bg)}
-.source-ref{margin:16px 0;padding:16px 18px;border-radius:10px;border:1px solid var(--card-border);background:var(--bg-s1);font-size:.9rem;color:var(--text-muted)}
-.source-title{font-weight:700;color:var(--text);margin-bottom:4px}
-.source-url{font-size:.8rem;color:var(--text-muted);word-break:break-all}
-.table-wrap{overflow-x:auto;margin:20px 0 28px;border-radius:12px;border:1px solid var(--card-border);background:var(--bg-s1)}
-table{width:100%;border-collapse:collapse;font-size:.9rem}
-th{text-align:left;padding:12px 16px;font-weight:650;color:var(--text);border-bottom:1px solid var(--card-border)}
-td{padding:10px 16px;border-bottom:1px solid var(--card-border);color:var(--text-muted)}
-tr:last-child td{border-bottom:none}
-.checklist{margin:24px 0;padding:24px;border-radius:12px;border:1px solid var(--card-border);background:var(--bg-s1)}
-.checklist h3{margin:0 0 16px;font-size:1rem}
-.checklist-item{display:flex;align-items:flex-start;gap:10px;padding:6px 0;font-size:.9rem;color:var(--text-muted)}
-.checklist-box{width:18px;height:18px;border:2px solid var(--card-border);border-radius:4px;flex-shrink:0;margin-top:2px}
-.footer{text-align:center;padding:48px 24px;border-top:1px solid var(--card-border);color:var(--text-muted);font-size:.85rem}
-.footer a{color:var(--link);text-decoration:none}
-@media(max-width:768px){.nav-inner{padding:0 10px}.nav-actions{gap:6px}.nav-link,.gh-link{padding:4px 8px;font-size:.75rem}.article{padding:0 16px 40px}.article-header{padding:48px 0 32px}.article-title{font-size:1.8rem}.article-subtitle{font-size:1rem}.article h2{font-size:1.3rem}}
+:root{--bg:#0A0A0A;--bg-s1:#111111;--bg-s2:#1A1A1A;--text:#EDEDED;--text-muted:#888888;--card:rgba(255,255,255,0.05);--card-border:rgba(255,255,255,0.08);--primary:#DC2626;--primary-light:#EF4444;--link:#EF4444;--link-hover:#DC2626;--badge-bg:rgba(220,38,38,0.12);--badge-text:#EF4444;--green:#22C55E;--green-bg:rgba(34,197,94,0.08);--green-border:rgba(34,197,94,0.25);--yellow:#F59E0B;--yellow-bg:rgba(245,158,11,0.08);--yellow-border:rgba(245,158,11,0.25);--blue:#3B82F6;--blue-bg:rgba(59,130,246,0.08);--blue-border:rgba(59,130,246,0.25);--nav-bg:rgba(10,10,10,0.8)}
+[data-theme="light"]{--bg:#FAFAFA;--bg-s1:#FFFFFF;--bg-s2:#F5F5F5;--text:#171717;--text-muted:#666666;--card:#FFFFFF;--card-border:rgba(0,0,0,0.08);--link:#DC2626;--link-hover:#B91C1C;--badge-bg:rgba(220,38,38,0.08);--badge-text:#DC2626;--nav-bg:rgba(250,250,250,0.85);--green-bg:rgba(34,197,94,0.06);--green-border:rgba(34,197,94,0.2);--yellow-bg:rgba(245,158,11,0.06);--yellow-border:rgba(245,158,11,0.2);--blue-bg:rgba(59,130,246,0.06);--blue-border:rgba(59,130,246,0.2)}
+html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:16px;transition:background .3s,color .3s}.nav{position:sticky;top:0;z-index:100;background:var(--nav-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--card-border)}.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px}.nav-logo{font-weight:800;font-size:1.1rem;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}.nav-logo .claw{color:var(--primary)}.nav-actions{display:flex;align-items:center;gap:12px}.nav-link,.gh-link{color:var(--text-muted);text-decoration:none;font-size:.85rem;font-weight:500;padding:6px 14px;border-radius:8px;border:1px solid var(--card-border);transition:all .2s}.nav-link:hover,.nav-link.active,.gh-link:hover{color:var(--text);border-color:var(--primary)}.theme-toggle{background:var(--card);border:1px solid var(--card-border);color:var(--text);cursor:pointer;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}.article{max-width:820px;margin:0 auto;padding:0 24px 80px}.article-header{padding:80px 0 48px;border-bottom:1px solid var(--card-border);margin-bottom:48px}.article-badge{display:inline-flex;align-items:center;gap:6px;background:var(--badge-bg);color:var(--badge-text);font-size:.8rem;font-weight:700;padding:4px 14px;border-radius:16px;margin-bottom:20px}.article-title{font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:-0.03em;line-height:1.15;margin-bottom:16px}.article-title .hl{color:var(--primary)}.article-subtitle{font-size:1.2rem;color:var(--text-muted);margin-bottom:24px;line-height:1.5}.article-meta{display:flex;flex-wrap:wrap;align-items:center;gap:16px;color:var(--text-muted);font-size:.85rem}.article-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.article-pill{font-size:.75rem;padding:4px 12px;border-radius:6px;background:var(--card);border:1px solid var(--card-border);color:var(--text-muted);font-weight:500}.article h2{font-size:1.55rem;font-weight:800;letter-spacing:-0.02em;margin:52px 0 18px;padding-left:16px;border-left:4px solid var(--primary);line-height:1.3}.article h3{font-size:1.18rem;font-weight:750;margin:34px 0 12px;color:var(--text)}.article p{color:var(--text-muted);margin-bottom:18px;line-height:1.85}.article strong{color:var(--text);font-weight:650}.article a{color:var(--link);text-decoration:none;transition:color .2s}.article a:hover{color:var(--link-hover);text-decoration:underline}.article ul,.article ol{margin:0 0 22px 24px;color:var(--text-muted)}.article li{margin-bottom:8px;line-height:1.75}.article li strong{color:var(--text)}.article code{font-family:'JetBrains Mono',monospace;font-size:.85em;background:rgba(255,255,255,0.06);padding:2px 6px;border-radius:4px;color:var(--primary-light)}.callout{margin:24px 0;padding:20px 24px;border-radius:12px;border:1px solid var(--card-border);background:var(--bg-s1)}.callout-title{font-weight:750;font-size:.9rem;margin-bottom:8px;color:var(--text);display:flex;align-items:center;gap:8px}.callout-info{border-color:var(--blue-border);background:var(--blue-bg)}.callout-solution{border-color:var(--green-border);background:var(--green-bg)}.callout-tip{border-color:var(--yellow-border);background:var(--yellow-bg)}.source-ref{margin:16px 0;padding:16px 18px;border-radius:10px;border:1px solid var(--card-border);background:var(--bg-s1);font-size:.9rem;color:var(--text-muted)}.source-title{font-weight:700;color:var(--text);margin-bottom:4px}.source-url{font-size:.8rem;color:var(--text-muted);word-break:break-all}.table-wrap{overflow-x:auto;margin:20px 0 28px;border-radius:12px;border:1px solid var(--card-border);background:var(--bg-s1)}table{width:100%;border-collapse:collapse;font-size:.9rem}th{text-align:left;padding:12px 16px;font-weight:650;color:var(--text);border-bottom:1px solid var(--card-border)}td{padding:10px 16px;border-bottom:1px solid var(--card-border);color:var(--text-muted)}tr:last-child td{border-bottom:none}.checklist{margin:24px 0;padding:24px;border-radius:12px;border:1px solid var(--card-border);background:var(--bg-s1)}.checklist h3{margin:0 0 16px;font-size:1rem}.checklist-item{display:flex;align-items:flex-start;gap:10px;padding:6px 0;font-size:.9rem;color:var(--text-muted)}.checklist-box{width:18px;height:18px;border:2px solid var(--card-border);border-radius:4px;flex-shrink:0;margin-top:2px}.footer{text-align:center;padding:48px 24px;border-top:1px solid var(--card-border);color:var(--text-muted);font-size:.85rem}.footer a{color:var(--link);text-decoration:none}@media(max-width:768px){.nav-inner{padding:0 10px}.nav-actions{gap:6px}.nav-link,.gh-link{padding:4px 8px;font-size:.75rem}.article{padding:0 16px 40px}.article-header{padding:48px 0 32px}.article-title{font-size:1.8rem}.article-subtitle{font-size:1rem}.article h2{font-size:1.3rem}}
 </style>
 </head>
 <body>
@@ -134,7 +43,7 @@ tr:last-child td{border-bottom:none}
 <header class="article-header">
 <div class="article-badge">Messaging</div>
 <h1 class="article-title">Lark and Feishu Made the Channel Story More Global</h1>
-<p class="article-subtitle">The Lark/Feishu plugin is another sign that OpenClaw is becoming a messaging gateway, not just a bot project.</p>
+<p class="article-subtitle">The Lark/Feishu plugin shows OpenClaw moving into workspace-native agents, where chat is only the doorway to docs, records, calendars, tasks, and permission risk.</p>
 <div class="article-meta">
 <span>Rohit Ghumare · <a href="https://x.com/ghumare64" target="_blank" rel="noopener">@ghumare64</a></span>
 <span>Mar 9, 2026</span>
@@ -144,230 +53,48 @@ tr:last-child td{border-bottom:none}
 <div class="article-pills">
 <span class="article-pill">Lark</span>
 <span class="article-pill">Feishu</span>
-<span class="article-pill">Messaging</span>
+<span class="article-pill">Workspace Agents</span>
+<span class="article-pill">Open Platform</span>
 </div>
 </header>
-<div class="callout callout-info">
-<div class="callout-title">Timeline note</div>
-<p>
-This post is part of the OpenClaw ecosystem timeline after the February blog window.
-I am placing it in Week of Mar 3, 2026 because the public source became visible or materially relevant around this period.
-</p>
-<p>
-The goal is not to mix February launch signals with March compatibility signals or April release cadence.
-Each post should stand on the public source for that week and explain why the signal matters to builders.
-</p>
-</div>
+
+<div class="callout callout-info"><div class="callout-title">The real signal</div><p>Lark/Feishu support matters because the integration is not just a message bridge. The official repository describes an OpenClaw channel plugin from the Lark/Feishu Open Platform team that reaches messages, Docs, Base, Sheets, Calendar, and Tasks. Feishu’s Open Platform advertises bots, app types, rich cards, AI-assisted developer tools, and 2,500+ APIs. That combination is the story: chat is the doorway, but workspace context is the room.</p></div>
 <h2>The short version</h2>
-<p>
-Lark and Feishu support is a global channel signal.
-OpenClaw is not only following Western developer chat apps.
-It is moving toward the communication surfaces teams actually use in different markets.
-</p>
-<p>
-The public source I am using here is larksuite/openclaw-lark.
-飞书官方出品的 OpenClaw 飞书/Lark Channel 插件
-</p>
-<p>
-I am not treating this as a random link to add to a directory.
-I am treating it as a small ecosystem signal: a sign of where users are trying to take OpenClaw in practice.
-</p>
-<h2>Why I am writing about this</h2>
-<p>
-Open source ecosystems do not grow only through the main repository.
-They grow when people build deployment paths, channel adapters, memory layers, observability hooks, team workflows, and small utilities around the core project.
-</p>
-<p>
-That is why this kind of source matters.
-It shows what developers are trying to solve after the first install works.
-</p>
-<p>
-The first wave of attention usually asks whether the project is interesting.
-The second wave asks whether it can be used in a real workflow.
-These posts are about that second wave.
-</p>
+<p>The Lark/Feishu plugin moves OpenClaw from “agent in a chat box” toward “agent inside a workspace graph.” The useful context is not just the latest message. It is the document linked above it, the Base record mentioned in it, the calendar slot implied by it, and the permission boundary around all of it.</p>
+<p>The best part of the source is that it does not hide the risk. The README warns about hallucinations, unpredictable execution, prompt injection, data leakage, and unauthorized operations once permissions are granted. That warning belongs in the headline, not in the footnote.</p>
+<h2>Why this one feels different</h2>
+<p>A lot of channel integrations normalize inbound and outbound messages. Lark/Feishu is a broader collaboration platform. Lark markets itself as a productivity superapp with Messenger, Docs, Base, Calendar, meetings, wiki, approvals, workflows, and developer APIs. Feishu’s developer site explicitly pushes bot development, rich card interactions, custom apps, and more than 2,500 APIs.</p>
+<p>That makes the integration more valuable and more dangerous. A chat answer can be wrong and embarrassing. A workspace action can be wrong and expensive.</p>
+<h2>What the source actually says</h2>
+<div class="table-wrap"><table><thead><tr><th>Evidence</th><th>Why it matters</th></tr></thead><tbody>
+<tr><td><code>larksuite/openclaw-lark</code></td><td>MIT-licensed TypeScript repo, described as the official Lark/Feishu OpenClaw channel plugin; roughly 2.1k GitHub stars at review time.</td></tr>
+<tr><td>Maintainer framing</td><td>The repo says it is developed and maintained by the Lark/Feishu Open Platform team.</td></tr>
+<tr><td>Workspace scope</td><td>Messages, Docs, Base, Sheets, Calendar, Tasks, and related read/write operations.</td></tr>
+<tr><td>Interaction model</td><td>Interactive cards, streaming text inside cards, real-time status updates, and confirmation buttons for sensitive operations.</td></tr>
+<tr><td>Security posture</td><td>The README warns about hallucinations, prompt injection, data leakage, unauthorized operations, and recommends private-assistant usage over broad group-bot usage.</td></tr>
+<tr><td>Platform context</td><td>Feishu Open Platform promotes bots, web apps, blocks, web components, and 2,500+ APIs across contacts, messenger, docs, Base, sheets, wiki, approvals, calendar, and video conferencing.</td></tr>
+</tbody></table></div>
 <h2>The wrong read</h2>
-<p>
-The weak read is “another chat plugin.” The stronger read is that agent adoption depends on distribution.
-If the agent is not in the team channel, it becomes another tab people forget.
-</p>
-<p>
-I want to avoid the easy hype version because it does not help anyone.
-If we just say every new plugin is a revolution, the blog becomes useless.
-The value is in explaining what changed, what did not change, and what a developer should inspect before depending on it.
-</p>
-<p>
-A good ecosystem post should leave a reader with a sharper mental model, not just another link.
-</p>
-<h2>What the source actually shows</h2>
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Field</th><th>Value</th></tr>
-</thead>
-<tbody>
-<tr><td>Source type</td><td>GitHub repository</td></tr>
-<tr><td>Repository</td><td>larksuite/openclaw-lark</td></tr>
-<tr><td>Created</td><td>2026-03-09</td></tr>
-<tr><td>Last public update</td><td>2026-04-28</td></tr>
-<tr><td>Stars at review time</td><td>2091</td></tr>
-<tr><td>License</td><td>MIT</td></tr>
-</tbody>
-</table>
+<p>The weak read is “OpenClaw added another enterprise chat app.” The stronger read is that workplace agents are going to be judged by context discipline. The more APIs a channel exposes, the more carefully the agent has to scope intent.</p>
+<p>Lark/Feishu is a good example because the integration sits exactly where agent hype usually gets vague. Everyone says “take action where work happens.” Fine. But what happens when the action is under a user identity, inside a workspace, against docs and records other people depend on?</p>
+<h2>The distribution lesson</h2>
+<p>OpenClaw does not win adoption by asking every team to open a new tab. It wins adoption when the agent becomes available where the team already makes decisions. For many teams in Asia and globally distributed companies, Lark or Feishu is that surface.</p>
+<p>But distribution without guardrails is not a product advantage. It is a blast-radius problem. The first useful deployment is probably not a public group bot. It is a private assistant with narrow permissions, explicit confirmations, and logs that can survive a postmortem.</p>
+<h2>My practical read</h2>
+<p>I like this signal because it contains both ambition and caution. The ambition is obvious: put OpenClaw next to messages, docs, records, calendars, and tasks. The caution is equally important: the source tells users that authorizing permissions lets OpenClaw act within that authorized scope and that misuse can leak data or perform unauthorized operations.</p>
+<p>That is the right shape for serious agent infrastructure. Capabilities and warnings in the same document. If an integration only sells the dream and never names the failure mode, I trust it less.</p>
+<div class="checklist"><h3>How I would test it</h3>
+<div class="checklist-item"><span class="checklist-box"></span><span>Start as a private assistant; do not add it to noisy groups on day one.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Make every write operation to Docs, Base, Calendar, or Tasks ask for a human confirmation.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Test prompt-injection paths through message history, documents, and card interactions.</span></div>
+<div class="checklist-item"><span class="checklist-box"></span><span>Review the exact Feishu/Lark OAuth scopes before celebrating the install.</span></div>
 </div>
-<h2>The developer reality before this</h2>
-<p>
-Most agent projects look simple from the outside: connect a model, connect a tool, send a message, get a response.
-That is the demo version.
-The real version is messier.
-</p>
-<p>
-Developers need repeatable setup, clear runtime boundaries, channel integration, logs, retries, permissions, memory, and ways to explain what happened when the agent is wrong.
-</p>
-<p>
-This is why small ecosystem projects matter.
-Each one is usually trying to remove one operational papercut that the core product cannot solve for every environment.
-</p>
-<h2>What changes for OpenClaw users</h2>
-<p>
-Channel plugins need more than message send and receive.
-They need identity mapping, permissions, thread context, attachments, mentions, and safe command patterns.
-</p>
-<p>
-The practical user question is not “should everyone install this?” The better question is “what job does this make clearer?”
-</p>
-<p>
-If the answer is clear, the resource belongs in the ecosystem conversation.
-If the answer is vague, it should stay out of any serious recommendation list until the use case becomes inspectable.
-</p>
-<h2>What changes for maintainers</h2>
-<p>
-For maintainers, every external resource creates two jobs.
-First, describe the project accurately.
-Second, avoid implying that it is officially endorsed, production-ready, or safe for every user unless the source actually proves that.
-</p>
-<p>
-That is why I prefer neutral directory language.
-Say what the tool connects, what workflow it supports, and where the source lives.
-Do not add fake maturity around it.
-</p>
-<p>
-The better the ecosystem gets, the more important this discipline becomes.
-A big awesome list can either help people navigate the space or become a pile of unchecked links.
-</p>
-<h2>The operational question</h2>
-<p>
-Enterprise chat surfaces also raise governance questions.
-Which group can call the agent?
-Which commands need approval?
-Where does the transcript go?
-</p>
-<p>
-Agent systems fail in boring ways: expired keys, unclear permissions, old context, broken webhooks, silent retries, missing logs, and users not knowing what the bot just did.
-</p>
-<p>
-Every integration should be evaluated against those boring failures.
-If it only works in a happy-path screenshot, it is not ready to be treated as infrastructure.
-</p>
-<h2>How I would evaluate it</h2>
-<p>
-I would start with the README and the smallest working example.
-If the resource cannot explain its install path, environment variables, runtime assumptions, and expected output, I would not put it in front of new users yet.
-</p>
-<p>
-Then I would test the failure path.
-What happens when the model returns a bad answer?
-What happens when an API call fails?
-What happens when the channel sends an unexpected payload?
-What happens when the user asks for something outside scope?
-</p>
-<p>
-Finally, I would check whether the project makes a workflow easier without hiding the dangerous parts.
-That is the balance OpenClaw needs as the ecosystem grows.
-</p>
-<div class="checklist">
-<h3>Review checklist before adopting this pattern</h3>
-<div class="checklist-item">
-<span class="checklist-box"></span>
-<span>Is the source public and inspectable?</span>
-</div>
-<div class="checklist-item">
-<span class="checklist-box"></span>
-<span>Does the README explain the real setup path?</span>
-</div>
-<div class="checklist-item">
-<span class="checklist-box"></span>
-<span>Are required tokens, permissions, and scopes documented?</span>
-</div>
-<div class="checklist-item">
-<span class="checklist-box"></span>
-<span>Can the integration fail safely?</span>
-</div>
-<div class="checklist-item">
-<span class="checklist-box"></span>
-<span>Does it keep enough logs to debug a bad run?</span>
-</div>
-<div class="checklist-item">
-<span class="checklist-box"></span>
-<span>Is the date context clear so old guidance is not treated as current?</span>
-</div>
-</div>
-<h2>What I would not claim</h2>
-<p>
-I would not claim this is the best solution in its category unless there is evidence.
-I would not claim production readiness unless the project documents production behavior.
-I would not claim broad adoption from a single repo, package, or release note.
-</p>
-<p>
-The honest claim is narrower and more useful: this is a visible public signal that developers are pushing OpenClaw into a specific workflow area.
-</p>
-<p>
-That kind of claim is enough.
-It respects the source and gives readers a reason to inspect it themselves.
-</p>
-<h2>Why this matters for the OpenClaw ecosystem</h2>
-<p>
-OpenClaw is not only a repository.
-It is becoming a set of operating patterns around agents.
-Some patterns will survive.
-Some will disappear.
-The job of this blog is to notice the useful ones early without turning every link into hype.
-</p>
-<p>
-This source matters because it points to one of those patterns.
-It shows where developers are asking for more structure around agents: channels, memory, deployment, teams, traces, training, or governance.
-</p>
-<p>
-The winning OpenClaw channel layer will normalize different messaging products behind the same operational model.
-</p>
-<h2>The practical read</h2>
-<p>
-If you are building on OpenClaw, do not copy the ecosystem blindly.
-Use it as a map of problems other builders are already hitting.
-</p>
-<p>
-When you see a channel plugin, ask what communication surface your users already live in.
-When you see a deployment module, ask what day-two operations are missing.
-When you see a memory plugin, ask what should be remembered and what should be forgotten.
-When you see observability, ask what you would need to debug a production incident.
-</p>
-<p>
-That is the mindset that turns an awesome list into useful infrastructure research.
-</p>
-<div class="callout callout-solution">
-<div class="callout-title">My takeaway</div>
-<p>
-Lark and Feishu Made the Channel Story More Global is worth tracking because it makes one OpenClaw operating pattern more concrete.
-The right move is to document it carefully, keep the claims neutral, and connect it to the workflow problem it actually solves.
-</p>
-</div>
-<h2>Source</h2>
-<div class="source-ref">
-<a href="https://github.com/larksuite/openclaw-lark" target="_blank" rel="noopener">
-<div class="source-title">larksuite/openclaw-lark</div>
-<div class="source-url">https://github.com/larksuite/openclaw-lark</div>
-</a>
-</div>
+<div class="callout callout-solution"><div class="callout-title">Takeaway</div><p>Lark/Feishu is the clearest March signal that OpenClaw is moving into workspace-native agents. The useful story is not “global chat coverage”; it is workspace context plus permission risk.</p></div>
+<h2>Sources</h2>
+<div class="source-ref"><a href="https://github.com/larksuite/openclaw-lark" target="_blank" rel="noopener"><div class="source-title">larksuite/openclaw-lark on GitHub</div><div class="source-url">https://github.com/larksuite/openclaw-lark</div></a></div>
+<div class="source-ref"><a href="https://open.feishu.cn/" target="_blank" rel="noopener"><div class="source-title">Feishu Open Platform</div><div class="source-url">https://open.feishu.cn/</div></a></div>
+<div class="source-ref"><a href="https://www.larksuite.com/en_sg/" target="_blank" rel="noopener"><div class="source-title">Lark product overview</div><div class="source-url">https://www.larksuite.com/en_sg/</div></a></div>
+
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>
 <script>
@@ -375,134 +102,9 @@ The right move is to document it carefully, keep the claims neutral, and connect
 const button=document.getElementById("themeToggle");
 const icon=document.getElementById("themeIcon");
 const html=document.documentElement;
-function setTheme(theme){
-if(theme==="light"){
-html.setAttribute("data-theme","light");
-icon.textContent="☀";
-}else{
-html.removeAttribute("data-theme");
-icon.textContent="☾";
-}
-localStorage.setItem("theme",theme);
-}
-const saved=localStorage.getItem("theme");
-if(saved){setTheme(saved);}
-<h2>Additional builder notes</h2>
-<h3>Adoption</h3>
-<p>
-A developer does not adopt an agent workflow because it sounds futuristic. They adopt it when it removes one repeated manual step without hiding the cost of that automation.
-</p>
-<h3>Distribution</h3>
-<p>
-The OpenClaw ecosystem is interesting because distribution keeps showing up as a technical problem. Channels, dashboards, hosting, and memory are all ways of getting the agent closer to the work.
-</p>
-<h3>Trust</h3>
-<p>
-Trust does not come from a better landing page. It comes from visible state, clear permissions, logs, examples, and a failure mode that a human can understand.
-</p>
-<h3>Maintenance</h3>
-<p>
-Every integration should be judged by how it behaves after the first successful demo. Does it survive updates? Does it explain errors? Does it document the assumptions?
-</p>
-<h3>Scope</h3>
-<p>
-The safest OpenClaw resources have a narrow job. They do one thing clearly, then let the user decide whether that thing belongs in a larger workflow.
-</p>
-<h3>Documentation</h3>
-<p>
-Good documentation should make the integration boring. The user should know what to install, what token to create, what command to run, and what output to expect.
-</p>
-<h3>Ecosystem fit</h3>
-<p>
-The resource is most useful when it connects to a repeated pattern in the ecosystem, not when it tries to look important by itself.
-</p>
-<h3>Review habit</h3>
-<p>
-Before adding a resource to a public directory, I want to know the source, the date, the workflow, the risk, and the reason a builder would care.
-</p>
-<h3>User value</h3>
-<p>
-The user value should be simple enough to explain in one sentence. If it takes five paragraphs to explain why the resource matters, the category may not be clear yet.
-</p>
-<h3>Operating model</h3>
-<p>
-The best OpenClaw additions point toward an operating model: request, route, execute, observe, recover, and document the result.
-</p>
-<h3>Quality bar</h3>
-<p>
-The quality bar is not whether the idea is exciting. The quality bar is whether a real user can inspect it, run it, and understand what changed.
-</p>
-<h3>Next step</h3>
-<p>
-The next step is not to hype the link. The next step is to place it carefully in the ecosystem map and keep the description honest.
-</p>
-<h3>Reader promise</h3>
-<p>
-The reader should leave with a practical interpretation, not only a summary. That is why the article keeps coming back to workflow, risk, and operating model.
-</p>
-<h3>Directory discipline</h3>
-<p>
-A directory entry should be shorter than a blog post, but the thinking behind it should be this careful. The public page should only keep the distilled version.
-</p>
-<h3>Date context</h3>
-<p>
-Date context matters because agent ecosystems move quickly. A February package, a March compatibility issue, and an April release train tell different stories.
-</p>
-<h3>Evidence</h3>
-<p>
-Evidence does not have to be dramatic. A repository, package, release note, or public example can be enough when the claim is appropriately narrow.
-</p>
-<h3>Hype control</h3>
-<p>
-The easiest way to make the blog weaker is to overclaim. The better habit is to make smaller claims with stronger evidence.
-</p>
-<h3>Developer empathy</h3>
-<p>
-Most developers are not looking for a category thesis. They are asking whether this saves time, reduces risk, or makes a workflow easier to operate.
-</p>
-<h3>Operational empathy</h3>
-<p>
-Operators care about what happens at 2 a.m. when a webhook fails, an API key expires, or a model starts returning bad output.
-</p>
-<h3>Ecosystem memory</h3>
-<p>
-These posts also create memory for the ecosystem. Later readers can see which signals appeared in which week and how the project expanded.
-</p>
-<h3>Practical filter</h3>
-<p>
-The practical filter is simple: if I cannot explain what the resource does, who it helps, and what to check before use, it does not deserve a strong recommendation.
-</p>
-<h3>Future research</h3>
-<p>
-The next round of research should compare these resources against real usage, not just existence. Stars and package dates are useful signals, but they are not the same as production adoption.
-</p>
-<h3>Writing standard</h3>
-<p>
-The writing should feel like a builder explaining what he noticed while mapping the ecosystem, not like a generated announcement feed.
-</p>
-<h3>Reader action</h3>
-<p>
-A good ending should push the reader toward inspection: open the source, read the setup path, check the permissions, and decide whether the workflow fits.
-</p>
-<h3>Public copy</h3>
-<p>
-Public copy should stay neutral. Say what exists, where it lives, and why it may matter. Do not turn every source into a launch announcement.
-</p>
-<h3>Maintainer habit</h3>
-<p>
-For maintainers, the habit is to separate evidence from interpretation. Evidence goes in the source block. Interpretation goes in the article. Claims stay bounded.
-</p>
-<h3>Builder takeaway</h3>
-<p>
-For builders, the takeaway is to watch the shape of demand. If many resources appear around one surface, that surface is probably becoming part of the operating layer.
-</p>
-<h3>Long-term value</h3>
-<p>
-The long-term value of this blog series is not one post. It is the map that appears when all the weekly signals are read together.
-</p>
-button.addEventListener("click",function(){
-setTheme(html.getAttribute("data-theme")==="light"?"dark":"light");
-});
+function setTheme(theme){if(theme==="light"){html.setAttribute("data-theme","light");icon.textContent="☀";}else{html.removeAttribute("data-theme");icon.textContent="☾";}localStorage.setItem("theme",theme);}
+const saved=localStorage.getItem("theme");if(saved){setTheme(saved);}
+button.addEventListener("click",function(){setTheme(html.getAttribute("data-theme")==="light"?"dark":"light");});
 })();
 </script>
 </body>
