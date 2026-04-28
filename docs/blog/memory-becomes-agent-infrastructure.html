@@ -147,6 +147,32 @@ tr:last-child td{border-bottom:none}
 <span class="article-pill">Context</span>
 </div>
 </header>
+
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for Memory Became Agent Infrastructure, Not a Feature" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>Memory Became Agent Infrastructure, Not a Feature operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#F97316" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#F97316">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Memory stack</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-8068322192333993181" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#F97316"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">interaction</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-8068322192333993181)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#F97316" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">memory layer</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#F97316" stroke-width="3" marker-end="url(#arrow-8068322192333993181)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">better next run</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">events</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">facts</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">retrieval</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">policy</text>
+<rect x="58" y="312" width="704" height="2" fill="#F97316" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">Memory becomes infrastructure when it has schemas, permissions, retrieval rules, and deletion paths.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
 <div class="callout callout-info">
 <div class="callout-title">Timeline note</div>
 <p>Reviewed for the April OpenClaw ecosystem batch. The public source is <a href="https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin" target="_blank" rel="noopener">MemTensor/MemOS-Cloud-OpenClaw-Plugin</a>, the MemOS Cloud plugin for OpenClaw.</p>
@@ -220,6 +246,12 @@ tr:last-child td{border-bottom:none}
 <p>Track this as memory infrastructure. The useful claim is not that agents become smarter by remembering everything; it is that memory is becoming a managed dependency inside the agent run loop.</p>
 </div>
 
+<h2>The memory taxonomy is the product</h2>
+<p>The memory layer should not be one giant bucket. A user preference is different from a project convention. A temporary task note is different from a durable fact. A credential is not a memory at all. If those categories are mixed, the agent becomes unpredictable because it retrieves old context without knowing whether that context is still valid.</p>
+<p>This is why memory infrastructure needs schemas and lifecycle rules. Some facts should be long-lived. Some should expire after a session. Some should be attached to a repo, workspace, or user. Some should require explicit confirmation before they are saved. The product quality is in those boring distinctions.</p>
+<h2>What I would measure</h2>
+<p>I would measure memory by precision, not by volume. Did the agent retrieve the right fact at the right time? Did it ignore stale information? Did it cite enough context for the user to understand why it behaved differently? A memory system that saves everything but cannot explain itself is not intelligence. It is hidden state.</p>
+<p>That may sound like implementation detail, but it is the difference between a demo and a system people can run for months. Agents fail in small ways before they fail loudly: stale context, unclear handoffs, repeated work, accidental authority, and summaries that sound confident but cannot be traced. The integration should make those problems visible early.</p>
 <h2>Source</h2>
 <div class="source-ref"><a href="https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin" target="_blank" rel="noopener"><div class="source-title">MemTensor/MemOS-Cloud-OpenClaw-Plugin</div><div class="source-url">https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin</div></a></div>
 </article>
