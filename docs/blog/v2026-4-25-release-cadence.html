@@ -147,6 +147,32 @@ tr:last-child td{border-bottom:none}
 <span class="article-pill">Operations</span>
 </div>
 </header>
+
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for OpenClaw v2026.4.25 Is a Maintenance Release, Not a Hype Cycle" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClaw v2026.4.25 Is a Maintenance Release, Not a Hype Cycle operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#3B82F6" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#3B82F6">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Release cadence</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-8743898629438173840" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#3B82F6"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">new version</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#3B82F6" stroke-width="3" marker-end="url(#arrow-8743898629438173840)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#3B82F6" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">maintenance loop</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#3B82F6" stroke-width="3" marker-end="url(#arrow-8743898629438173840)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">stable operator path</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">release notes</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">plugin registry</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">telemetry</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">upgrade</text>
+<rect x="58" y="312" width="704" height="2" fill="#3B82F6" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">A healthy release cadence is not only features. It is update reliability, observability, and compatibility.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
 <div class="callout callout-info">
 <div class="callout-title">Evidence used</div>
 <p>This note is based on the public <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.25" target="_blank" rel="noopener">OpenClaw 2026.4.25 GitHub release</a>, the repository release index, and OpenClaw documentation for updating, getting started, model selection, and failover. I am not inferring hidden roadmap details from the tag.</p>
@@ -206,6 +232,9 @@ tr:last-child td{border-bottom:none}
 <div class="callout-title">My takeaway</div>
 <p>This release is worth writing about because it is specific. It shows OpenClaw paying down operational complexity: voice scope, plugin state, telemetry, browser readiness, setup repair, and updates. That is exactly the work an agent project has to do if it wants daily usage instead of one viral demo.</p>
 </div>
+<h2>How I would read the diagram</h2>
+<p>The April release is useful to read as a maintenance signal. A project with channels, plugins, and deployment modes cannot rely only on exciting features. It needs the boring pieces: update flow, registry persistence, telemetry coverage, browser reliability, and clear release notes.</p>
+<p>That is why I would judge this kind of release by operator confidence. Can someone upgrade without guessing? Can they see what changed? Can plugin authors understand compatibility? Can a broken browser action be debugged? Those questions matter as much as the headline feature list.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.25" target="_blank" rel="noopener"><div class="source-title">OpenClaw 2026.4.25 GitHub release</div><div class="source-url">https://github.com/openclaw/openclaw/releases/tag/v2026.4.25</div></a></div>
 <div class="source-ref"><a href="https://github.com/openclaw/openclaw/releases" target="_blank" rel="noopener"><div class="source-title">OpenClaw release index</div><div class="source-url">https://github.com/openclaw/openclaw/releases</div></a></div>
