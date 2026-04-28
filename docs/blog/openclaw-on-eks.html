@@ -174,7 +174,7 @@ tr:last-child td{border-bottom:none}
 </svg>
 <figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
 </figure>
-<div class="callout callout-info"><div class="callout-title">Research note</div><p>This post treats the linked OpenClaw project as a public ecosystem signal, not as proof of official endorsement or production maturity. The claims below are intentionally bounded: what the source appears to solve, what operators should verify, and which industry practices apply before a team depends on it.</p></div>
+<div class="callout callout-info"><div class="callout-title">Research note</div><p>This post treats the linked OpenClaw project as a public source worth tracking, not as proof of official endorsement or production maturity. The claims below are intentionally bounded: what the source appears to solve, what operators should verify, and which industry practices apply before a team depends on it.</p></div>
 <h2>Kubernetes is not the point</h2>
 <p>The important part of <strong>hitsub2/openclaw-on-eks</strong> is not that OpenClaw can be wrapped in Kubernetes YAML. Almost anything can. The important signal is that users are asking whether OpenClaw can fit into the same platform machinery teams already use for services: deployments, rollouts, secrets, ingress, IAM, logs, autoscaling, and policy.</p>
 <p>AWS describes EKS as a managed Kubernetes service that reduces the complexity of operating Kubernetes clusters. Kubernetes Deployments provide declarative updates for Pods and ReplicaSets, including rollout and rollback behavior. Those are useful primitives for agent systems, but they do not answer the agent-specific questions by themselves.</p>
@@ -253,6 +253,10 @@ tr:last-child td{border-bottom:none}
 <div class="source-url">https://docs.aws.amazon.com/eks/latest/best-practices/cost-opt.html</div>
 </a>
 </div>
+<h2>The bar I would use before trusting this</h2>
+<p>For OpenClaw readers, the useful question is not whether this exists as a package or repository. The useful question is whether it changes the operating model. Does it move the agent closer to a channel people already trust? Does it add a new permission boundary? Does it make debugging easier? Does it make deployment repeatable enough that a maintainer could support it after the launch week? That is the bar I am using here.</p>
+<p>I also do not want to over-claim the source. A repo, package, or release note is evidence of direction, not proof of adoption. The right way to read these posts is as a builder map: what became possible, where the integration boundary moved, and what a serious team would verify before putting it near real users.</p>
+
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>
 <script>

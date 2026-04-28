@@ -174,7 +174,7 @@ tr:last-child td{border-bottom:none}
 </svg>
 <figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
 </figure>
-<div class="callout callout-info"><div class="callout-title">Research note</div><p>This post treats the linked OpenClaw project as a public ecosystem signal, not as proof of official endorsement or production maturity. The claims below are intentionally bounded: what the source appears to solve, what operators should verify, and which industry practices apply before a team depends on it.</p></div>
+<div class="callout callout-info"><div class="callout-title">Research note</div><p>This post treats the linked OpenClaw project as a public source worth tracking, not as proof of official endorsement or production maturity. The claims below are intentionally bounded: what the source appears to solve, what operators should verify, and which industry practices apply before a team depends on it.</p></div>
 <h2>The real value is repeatability</h2>
 <p>A Terraform module for OpenClaw on Hetzner is not just another way to rent a server. It is a way to make the infrastructure reviewable. The linked project, <strong>andreesg/openclaw-terraform-hetzner</strong>, describes VPS provisioning, firewall configuration, cloud-init automation, and deployment tooling. Those are the right primitives for turning a one-off installation into something a team can recreate.</p>
 <p>HashiCorp describes Terraform as infrastructure as code for building, changing, and versioning infrastructure safely and efficiently. That matters for OpenClaw because agents often accumulate hidden state: provider keys, webhooks, memory stores, volumes, DNS records, and firewall exceptions. Hidden state is what makes rebuilds painful.</p>
@@ -195,7 +195,7 @@ tr:last-child td{border-bottom:none}
 <p>The tradeoff is that a single VPS does not magically solve high availability, managed databases, secret rotation, or multi-tenant isolation. If the agent controls important accounts, the deployment should still have backups, monitoring, upgrade windows, and a documented destroy/recreate path.</p>
 <div class="callout callout-solution"><div class="callout-title">Good IaC posture</div><p>The test is not whether <code>terraform apply</code> succeeds once. The test is whether a second operator can read the plan, understand every public surface, rebuild the stack in a new region, restore state, and know which secrets must be rotated.</p></div>
 <h2>What this means for OpenClaw</h2>
-<p>This project is a meaningful ecosystem signal because deployment recipes are becoming operational assets. A good Terraform module turns OpenClaw from a local experiment into a reproducible environment. A weak module turns a shell script into HCL without solving the operational problem.</p>
+<p>This project is a meaningful source worth tracking because deployment recipes are becoming operational assets. A good Terraform module turns OpenClaw from a local experiment into a reproducible environment. A weak module turns a shell script into HCL without solving the operational problem.</p>
 <div class="checklist"><h3>Terraform review checklist</h3>
 <div class="checklist-item"><span class="checklist-box"></span><span>Remote state is encrypted and access-controlled.</span></div>
 <div class="checklist-item"><span class="checklist-box"></span><span>Firewall rules are least-privilege and documented.</span></div>
@@ -238,6 +238,10 @@ tr:last-child td{border-bottom:none}
 <div class="source-url">https://docs.hetzner.com/cloud/firewalls/overview/</div>
 </a>
 </div>
+<h2>The bar I would use before trusting this</h2>
+<p>For OpenClaw readers, the useful question is not whether this exists as a package or repository. The useful question is whether it changes the operating model. Does it move the agent closer to a channel people already trust? Does it add a new permission boundary? Does it make debugging easier? Does it make deployment repeatable enough that a maintainer could support it after the launch week? That is the bar I am using here.</p>
+<p>I also do not want to over-claim the source. A repo, package, or release note is evidence of direction, not proof of adoption. The right way to read these posts is as a builder map: what became possible, where the integration boundary moved, and what a serious team would verify before putting it near real users.</p>
+
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>
 <script>

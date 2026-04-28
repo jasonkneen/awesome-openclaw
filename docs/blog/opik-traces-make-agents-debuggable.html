@@ -89,7 +89,7 @@ openclaw gateway restart</code></pre>
 <h2 id="checklist">Rollout checklist</h2>
 <ul><li>Install only from the documented package and confirm OpenClaw version compatibility.</li><li>Use separate Opik projects for development, staging, and production.</li><li>Define trace tags for environment, model, workflow, and agent role.</li><li>Enable redaction for secrets and sensitive tool results where appropriate.</li><li>Test concurrent agent sessions and inspect span correlation.</li><li>Set retention rules before sending production data.</li><li>Turn the top failure traces into regression tests or evaluation examples.</li></ul>
 <h2>The bottom line</h2>
-<p>Opik OpenClaw is a strong ecosystem signal because it marks the point where agent runs stop being mysterious conversations and start becoming inspectable systems. That is the difference between a demo and an operation.</p>
+<p>Opik OpenClaw is a strong source worth tracking because it marks the point where agent runs stop being mysterious conversations and start becoming inspectable systems. That is the difference between a demo and an operation.</p>
 <p>The best OpenClaw teams will not ask, "Did the agent work?" They will ask: what did it see, what did it call, what did it cost, what failed, who approved it, and can we replay the evidence? Traces are how those questions get answered.</p>
 <h2>How I would read the diagram</h2>
 <p>The biggest value of tracing is not a pretty dashboard. It is the ability to answer uncomfortable questions after an agent fails. Which prompt changed? Which tool returned bad data? Was the model wrong, or was the context polluted? Did the retry fix the issue, or did it hide it?</p>

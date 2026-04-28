@@ -174,7 +174,7 @@ tr:last-child td{border-bottom:none}
 <figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
 </figure>
 
-<div class="callout callout-info"><div class="callout-title">Timeline note</div><p>This post focuses on the <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.3.24" target="_blank" rel="noopener">OpenClaw v2026.3.24</a> release window and what it means for plugin builders. It is not a generic release recap; it is a compatibility read.</p></div>
+<div class="callout callout-info"><div class="callout-title">Why this matters now</div><p>This post focuses on the <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.3.24" target="_blank" rel="noopener">OpenClaw v2026.3.24</a> release window and what it means for plugin builders. It is not a generic release recap; it is a compatibility read.</p></div>
 <h2>The release was a contract test for the ecosystem</h2>
 <p>OpenClaw v2026.3.24 shipped the kind of changes that make an ecosystem feel real: OpenAI-compatible gateway endpoints, clearer tools visibility, Microsoft Teams SDK migration, skills install metadata, Slack interactive reply fixes, container-aware CLI commands, Discord auto-thread naming, and plugin hook work such as <code>before_dispatch</code>.</p>
 <p>None of that is filler. Each item touches a contract external builders depend on: HTTP API shape, channel behavior, tool visibility, plugin hooks, skills metadata, runtime requirements, and deployment assumptions. This is why late March should be read as a compatibility moment, not only a feature release.</p>
@@ -219,6 +219,10 @@ tr:last-child td{border-bottom:none}
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.3.24" target="_blank" rel="noopener"><div class="source-title">openclaw/openclaw v2026.3.24 release</div><div class="source-url">https://github.com/openclaw/openclaw/releases/tag/v2026.3.24</div></a></div>
 <div class="source-ref"><a href="https://github.com/pwrdrvr/openclaw-codex-app-server" target="_blank" rel="noopener"><div class="source-title">pwrdrvr/openclaw-codex-app-server compatibility notes</div><div class="source-url">https://github.com/pwrdrvr/openclaw-codex-app-server</div></a></div>
+
+<h2>The bar I would use before trusting this</h2>
+<p>For OpenClaw readers, the useful question is not whether this exists as a package or repository. The useful question is whether it changes the operating model. Does it move the agent closer to a channel people already trust? Does it add a new permission boundary? Does it make debugging easier? Does it make deployment repeatable enough that a maintainer could support it after the launch week? That is the bar I am using here.</p>
+<p>I also do not want to over-claim the source. A repo, package, or release note is evidence of direction, not proof of adoption. The right way to read these posts is as a builder map: what became possible, where the integration boundary moved, and what a serious team would verify before putting it near real users.</p>
 
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>

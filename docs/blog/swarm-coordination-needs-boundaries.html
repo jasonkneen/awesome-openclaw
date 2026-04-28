@@ -174,8 +174,8 @@ tr:last-child td{border-bottom:none}
 <figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
 </figure>
 <div class="callout callout-info">
-<div class="callout-title">Timeline note</div>
-<p>Reviewed for the April OpenClaw ecosystem batch. The public source is <a href="https://github.com/win4r/ClawTeam-OpenClaw" target="_blank" rel="noopener">win4r/ClawTeam-OpenClaw</a>, a fork of HKUDS/ClawTeam adapted to use OpenClaw as the default agent.</p>
+<div class="callout-title">Why this matters now</div>
+<p>The public source is <a href="https://github.com/win4r/ClawTeam-OpenClaw" target="_blank" rel="noopener">win4r/ClawTeam-OpenClaw</a>, a fork of HKUDS/ClawTeam adapted to use OpenClaw as the default agent.</p>
 <p>The signal is not “more agents are always better.” The signal is that OpenClaw users are experimenting with agent teams, worktrees, dashboards, and explicit coordination mechanics.</p>
 </div>
 
@@ -247,6 +247,10 @@ tr:last-child td{border-bottom:none}
 <p>That may sound like implementation detail, but it is the difference between a demo and a system people can run for months. Agents fail in small ways before they fail loudly: stale context, unclear handoffs, repeated work, accidental authority, and summaries that sound confident but cannot be traced. The integration should make those problems visible early.</p>
 <h2>Source</h2>
 <div class="source-ref"><a href="https://github.com/win4r/ClawTeam-OpenClaw" target="_blank" rel="noopener"><div class="source-title">win4r/ClawTeam-OpenClaw</div><div class="source-url">https://github.com/win4r/ClawTeam-OpenClaw</div></a></div>
+<h2>The bar I would use before trusting this</h2>
+<p>For OpenClaw readers, the useful question is not whether this exists as a package or repository. The useful question is whether it changes the operating model. Does it move the agent closer to a channel people already trust? Does it add a new permission boundary? Does it make debugging easier? Does it make deployment repeatable enough that a maintainer could support it after the launch week? That is the bar I am using here.</p>
+<p>I also do not want to over-claim the source. A repo, package, or release note is evidence of direction, not proof of adoption. The right way to read these posts is as a builder map: what became possible, where the integration boundary moved, and what a serious team would verify before putting it near real users.</p>
+
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>
 <script>

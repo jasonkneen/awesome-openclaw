@@ -174,7 +174,7 @@ tr:last-child td{border-bottom:none}
 <figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
 </figure>
 
-<div class="callout callout-info"><div class="callout-title">Timeline note</div><p>This post looks at <a href="https://github.com/raulvidis/openclaw-multi-agent-kit" target="_blank" rel="noopener">raulvidis/openclaw-multi-agent-kit</a>, a March-era template kit for running OpenClaw agent teams through Telegram supergroups and topic channels.</p></div>
+<div class="callout callout-info"><div class="callout-title">Why this matters now</div><p>This post looks at <a href="https://github.com/raulvidis/openclaw-multi-agent-kit" target="_blank" rel="noopener">raulvidis/openclaw-multi-agent-kit</a>, a March-era template kit for running OpenClaw agent teams through Telegram supergroups and topic channels.</p></div>
 <h2>The useful part is not “ten agents”</h2>
 <p>“Ten agents” is a catchy headline and a bad architecture principle. The useful part of <code>openclaw-multi-agent-kit</code> is that it treats multi-agent work as an operating system problem: identities, workspaces, topics, shared markdown context, escalation rules, cron schedules, and bot-to-bot triggers.</p>
 <p>The repository says it was built from a live production setup with ten autonomous agents. Each agent has a bot identity, personality, workspace, domain expertise, Telegram routing, and shared context workflow. Whether a team needs three agents or ten is secondary. What matters is that the kit forces builders to name the boundaries between roles.</p>
@@ -215,6 +215,10 @@ tr:last-child td{border-bottom:none}
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/raulvidis/openclaw-multi-agent-kit" target="_blank" rel="noopener"><div class="source-title">raulvidis/openclaw-multi-agent-kit</div><div class="source-url">https://github.com/raulvidis/openclaw-multi-agent-kit</div></a></div>
 <div class="source-ref"><a href="https://blog.cdnsun.com/multi-agents-in-openclaw-sub-agents-and-telegram/" target="_blank" rel="noopener"><div class="source-title">Multi-agents in OpenClaw: sub-agents and Telegram</div><div class="source-url">https://blog.cdnsun.com/multi-agents-in-openclaw-sub-agents-and-telegram/</div></a></div>
+
+<h2>The bar I would use before trusting this</h2>
+<p>For OpenClaw readers, the useful question is not whether this exists as a package or repository. The useful question is whether it changes the operating model. Does it move the agent closer to a channel people already trust? Does it add a new permission boundary? Does it make debugging easier? Does it make deployment repeatable enough that a maintainer could support it after the launch week? That is the bar I am using here.</p>
+<p>I also do not want to over-claim the source. A repo, package, or release note is evidence of direction, not proof of adoption. The right way to read these posts is as a builder map: what became possible, where the integration boundary moved, and what a serious team would verify before putting it near real users.</p>
 
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>
