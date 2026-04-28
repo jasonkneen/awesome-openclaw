@@ -29,6 +29,32 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',sys
 <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><span class="claw">Open</span>Claw</a><div class="nav-actions"><a href="/" class="nav-link">Home</a><a href="/directory" class="nav-link">Directory</a><a href="/use-cases" class="nav-link">Use Cases</a><a href="/blog" class="nav-link active">Blog</a><button class="theme-toggle" id="themeToggle" title="Toggle theme"><span id="themeIcon">☾</span></button><a href="https://github.com/rohitg00/awesome-openclaw" target="_blank" rel="noopener" class="gh-link"><span>GitHub</span></a></div></div></nav>
 <article class="article">
 <header class="article-header"><div class="article-badge">Multi-Agent</div><h1 class="article-title">OpenClaw Started Moving From One Bot to Agent Teams</h1><p class="article-subtitle">Antfarm makes the multi-agent idea concrete: defined roles, deterministic workflows, clean context, retries, and verification instead of a noisy agent group chat.</p><div class="article-meta"><span>Rohit Ghumare &middot; <a href="https://x.com/ghumare64" target="_blank" rel="noopener">@ghumare64</a></span><span>Feb 26, 2026</span><span>12 min read</span></div><div class="article-pills"><span class="article-pill">Antfarm</span><span class="article-pill">Multi-Agent</span><span class="article-pill">CLI</span><span class="article-pill">Workflows</span></div></header>
+
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for OpenClaw Started Moving From One Bot to Agent Teams" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClaw Started Moving From One Bot to Agent Teams operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#8B5CF6" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#8B5CF6">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Agent team pattern</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-1415408320528453280" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#8B5CF6"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">task</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#8B5CF6" stroke-width="3" marker-end="url(#arrow-1415408320528453280)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#8B5CF6" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">team split</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#8B5CF6" stroke-width="3" marker-end="url(#arrow-1415408320528453280)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">reviewed output</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">planner</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">worker agents</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">shared state</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">review loop</text>
+<rect x="58" y="312" width="704" height="2" fill="#8B5CF6" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">Multi-agent is useful only when responsibility, memory, and review boundaries are explicit.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
 <div class="impact-grid"><div class="impact-card"><div class="impact-val">2.4K</div><div class="impact-label">GitHub stars</div></div><div class="impact-card"><div class="impact-val">3</div><div class="impact-label">Bundled workflows</div></div><div class="impact-card"><div class="impact-val">YAML</div><div class="impact-label">Workflow definitions</div></div><div class="impact-card"><div class="impact-val">SQLite</div><div class="impact-label">State tracking</div></div></div>
 <nav class="toc"><div class="toc-title">What's Inside</div><ol class="toc-list"><li><a href="#signal"><span class="num">01</span>The signal</a></li><li><a href="#design"><span class="num">02</span>Why deterministic teams matter</a></li><li><a href="#workflows"><span class="num">03</span>What ships</a></li><li><a href="#limits"><span class="num">04</span>Limits and risk</a></li><li><a href="#check"><span class="num">05</span>Adoption checklist</a></li></ol></nav>
 <h2 id="signal">The signal</h2>
@@ -62,6 +88,9 @@ antfarm workflow run feature-dev "Add OAuth login"</code></pre>
 <h2>The bottom line</h2>
 <p>Antfarm matters because it takes the multi-agent idea out of the group-chat metaphor. The useful abstraction is not "a swarm." It is a workflow with role boundaries and state.</p>
 <p>For OpenClaw, this is a strong ecosystem signal. Builders are no longer asking only, "Can my agent do the task?" They are asking, "Can a team of agents do the task in a way I can inspect, retry, and trust?" Antfarm's answer is not final, but its design points in the right direction: fewer vibes, more process.</p>
+<h2>How I would read the diagram</h2>
+<p>The useful question is not “can I run ten agents?” It is “what does each agent own?” A planner without authority boundaries becomes a narrator. A worker without a review loop becomes a random subprocess. A team without shared state becomes duplicated effort.</p>
+<p>That is why I read Antfarm as a coordination signal rather than a novelty. The agent team needs a reason to exist. Parallelism helps when there are separable investigations, competing solutions, or long-running checks. It hurts when the task needs one coherent product decision. A good OpenClaw integration should make that trade-off visible instead of hiding it behind a swarm label.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/snarktank/antfarm" target="_blank" rel="noopener"><div class="source-title">snarktank/antfarm repository</div><div class="source-url">https://github.com/snarktank/antfarm</div></a></div>
 <div class="source-ref"><a href="https://www.antfarm.cool/" target="_blank" rel="noopener"><div class="source-title">Antfarm project site</div><div class="source-url">https://www.antfarm.cool/</div></a></div>

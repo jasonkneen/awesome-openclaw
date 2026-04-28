@@ -29,6 +29,32 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',sys
 <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><span class="claw">Open</span>Claw</a><div class="nav-actions"><a href="/" class="nav-link">Home</a><a href="/directory" class="nav-link">Directory</a><a href="/use-cases" class="nav-link">Use Cases</a><a href="/blog" class="nav-link active">Blog</a><button class="theme-toggle" id="themeToggle" title="Toggle theme"><span id="themeIcon">☾</span></button><a href="https://github.com/rohitg00/awesome-openclaw" target="_blank" rel="noopener" class="gh-link"><span>GitHub</span></a></div></div></nav>
 <article class="article">
 <header class="article-header"><div class="article-badge">Voice</div><h1 class="article-title">Voice Becomes an OpenClaw Command Surface</h1><p class="article-subtitle">VoxClaw is not a talking-assistant gimmick. It shows how voice can become a local, inspectable output surface for agents that run outside the chat window.</p><div class="article-meta"><span>Rohit Ghumare &middot; <a href="https://x.com/ghumare64" target="_blank" rel="noopener">@ghumare64</a></span><span>Feb 18, 2026</span><span>10 min read</span></div><div class="article-pills"><span class="article-pill">VoxClaw</span><span class="article-pill">Voice</span><span class="article-pill">macOS</span><span class="article-pill">Agent UX</span></div></header>
+
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for Voice Becomes an OpenClaw Command Surface" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>Voice Becomes an OpenClaw Command Surface operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#F59E0B" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#F59E0B">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Voice command surface</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-2159606014171273728" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#F59E0B"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">voice note</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow-2159606014171273728)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#F59E0B" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">command gate</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow-2159606014171273728)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">safe action</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">speech input</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">intent parse</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">confirmation</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">action</text>
+<rect x="58" y="312" width="704" height="2" fill="#F59E0B" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">Voice makes agents faster to reach, but slower to trust unless confirmation and replay are designed from day one.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
 <div class="impact-grid"><div class="impact-card"><div class="impact-val">macOS</div><div class="impact-label">Menu bar app</div></div><div class="impact-card"><div class="impact-val">HTTP</div><div class="impact-label">LAN input</div></div><div class="impact-card"><div class="impact-val">3</div><div class="impact-label">Voice engines</div></div><div class="impact-card"><div class="impact-val">MIT</div><div class="impact-label">License</div></div></div>
 <nav class="toc"><div class="toc-title">What's Inside</div><ol class="toc-list"><li><a href="#signal"><span class="num">01</span>The signal</a></li><li><a href="#ux"><span class="num">02</span>Voice as command surface</a></li><li><a href="#mechanics"><span class="num">03</span>What VoxClaw actually ships</a></li><li><a href="#risks"><span class="num">04</span>Privacy and safety</a></li><li><a href="#fit"><span class="num">05</span>Where this fits</a></li></ol></nav>
 <h2 id="signal">The signal</h2>
@@ -64,6 +90,9 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',sys
 <h2>The bottom line</h2>
 <p>VoxClaw is worth tracking because it treats voice as a local, inspectable agent output surface. It does not prove that voice is the future of OpenClaw. It proves something more practical: builders are looking for ways to get agent state out of the chat window and into the user's environment.</p>
 <p>The winning version of this pattern will be boring: clear setup, local-first defaults, visible network controls, transcript hygiene, and a hard stop button. Voice should make the agent easier to supervise, not easier to accidentally obey.</p>
+<h2>How I would read the diagram</h2>
+<p>Voice changes the cost of asking. When the input is typing, the user naturally edits before sending. When the input is voice, the first version is often messy, emotional, and incomplete. A useful OpenClaw voice surface should therefore separate transcription confidence from action confidence.</p>
+<p>That is the operational detail I care about. A transcript can be good enough to answer a question but not good enough to send a message, run a command, or change a file. The interface should make that distinction visible. If it does not, voice becomes a shortcut around the safety model instead of a better command surface.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://malpern.github.io/VoxClaw/" target="_blank" rel="noopener"><div class="source-title">VoxClaw project site</div><div class="source-url">https://malpern.github.io/VoxClaw/</div></a></div>
 <div class="source-ref"><a href="https://github.com/malpern/VoxClaw" target="_blank" rel="noopener"><div class="source-title">malpern/VoxClaw repository</div><div class="source-url">https://github.com/malpern/VoxClaw</div></a></div>

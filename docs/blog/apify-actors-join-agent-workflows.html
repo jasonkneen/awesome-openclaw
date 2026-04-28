@@ -29,6 +29,32 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',sys
 <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo"><span class="claw">Open</span>Claw</a><div class="nav-actions"><a href="/" class="nav-link">Home</a><a href="/directory" class="nav-link">Directory</a><a href="/use-cases" class="nav-link">Use Cases</a><a href="/blog" class="nav-link active">Blog</a><button class="theme-toggle" id="themeToggle" title="Toggle theme"><span id="themeIcon">☾</span></button><a href="https://github.com/rohitg00/awesome-openclaw" target="_blank" rel="noopener" class="gh-link"><span>GitHub</span></a></div></div></nav>
 <article class="article">
 <header class="article-header"><div class="article-badge">Automation</div><h1 class="article-title">Apify Actors Joined the OpenClaw Workflow Layer</h1><p class="article-subtitle">Apify’s OpenClaw plugin turns thousands of web automations into an agent-callable execution layer. The useful signal is not scraping hype; it is typed, asynchronous workflow routing.</p><div class="article-meta"><span>Rohit Ghumare &middot; <a href="https://x.com/ghumare64" target="_blank" rel="noopener">@ghumare64</a></span><span>Feb 20, 2026</span><span>11 min read</span></div><div class="article-pills"><span class="article-pill">Apify</span><span class="article-pill">Actors</span><span class="article-pill">Workflow Routing</span><span class="article-pill">Web Automation</span></div></header>
+
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for Apify Actors Joined the OpenClaw Workflow Layer" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>Apify Actors Joined the OpenClaw Workflow Layer operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#22C55E" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#22C55E">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Workflow boundary</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-4585628049460759373" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#22C55E"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">Web task</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow-4585628049460759373)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#22C55E" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">Actor run</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow-4585628049460759373)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">usable result</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">actor catalog</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">run input</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">result dataset</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">agent decision</text>
+<rect x="58" y="312" width="704" height="2" fill="#22C55E" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">The point is not scraping for its own sake. The point is a repeatable boundary between an agent request and a maintained external action.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
 <div class="impact-grid"><div class="impact-card"><div class="impact-val">20K+</div><div class="impact-label">Apify Actors</div></div><div class="impact-card"><div class="impact-val">3</div><div class="impact-label">Tool actions</div></div><div class="impact-card"><div class="impact-val">2-phase</div><div class="impact-label">Async run pattern</div></div><div class="impact-card"><div class="impact-val">MIT</div><div class="impact-label">Plugin license</div></div></div>
 <nav class="toc"><div class="toc-title">What's Inside</div><ol class="toc-list"><li><a href="#thesis"><span class="num">01</span>The real signal</a></li><li><a href="#mechanics"><span class="num">02</span>How the plugin works</a></li><li><a href="#architecture"><span class="num">03</span>Why Actors change agent design</a></li><li><a href="#risks"><span class="num">04</span>Risks builders should not skip</a></li><li><a href="#operators"><span class="num">05</span>Operator checklist</a></li></ol></nav>
 <h2 id="thesis">The real signal</h2>
@@ -62,6 +88,9 @@ openclaw gateway restart</code></pre>
 <h2>The bottom line</h2>
 <p>Apify inside OpenClaw is a useful signal because it shows the agent stack becoming modular. The model is not the scraper. The model is not the queue. The model is not the dataset processor. The model is the planner and router that decides when to invoke a tested automation unit.</p>
 <p>That is the pattern worth copying: typed tools, asynchronous jobs, explicit allowlists, and output that can be inspected after the run. If OpenClaw becomes a serious workflow layer, integrations like this are how it will get there &mdash; not by making the browser loop more magical, but by routing work to systems that already know how to do it.</p>
+<h2>How I would read the diagram</h2>
+<p>Apify is interesting here because it forces a shape around work that agents usually handle too casually. The actor has an input contract. It has a runtime. It has logs. It returns a dataset or a clear failure. That sounds boring, but boring interfaces are exactly what agent systems need when they touch the web.</p>
+<p>The mistake would be to treat this as unlimited browsing. I would treat every actor like a tool with a budget, a purpose, and an owner. If the actor pulls a website, the agent should know why it is doing that, what data it is allowed to keep, and what should be discarded after the task. That is the difference between a workflow and a crawler bolted to a chatbot.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://docs.apify.com/platform/integrations/openclaw" target="_blank" rel="noopener"><div class="source-title">Apify OpenClaw integration docs</div><div class="source-url">https://docs.apify.com/platform/integrations/openclaw</div></a></div>
 <div class="source-ref"><a href="https://apify.com/integrations/openclaw" target="_blank" rel="noopener"><div class="source-title">Apify integration page: OpenClaw</div><div class="source-url">https://apify.com/integrations/openclaw</div></a></div>
