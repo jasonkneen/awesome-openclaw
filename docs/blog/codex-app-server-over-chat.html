@@ -175,7 +175,7 @@ tr:last-child td{border-bottom:none}
 </figure>
 
 <div class="callout callout-info">
-<div class="callout-title">Timeline note</div>
+<div class="callout-title">Why this matters now</div>
 <p>This March post covers a third-party OpenClaw workflow source, not a core OpenClaw release. The source is <a href="https://github.com/pwrdrvr/openclaw-codex-app-server" target="_blank" rel="noopener">pwrdrvr/openclaw-codex-app-server</a>, a TypeScript plugin for connecting OpenClaw chat channels to the Codex App Server protocol.</p>
 </div>
 <h2>The real signal: chat became the control plane</h2>
@@ -219,6 +219,10 @@ tr:last-child td{border-bottom:none}
 <p>The practical standard is reviewability. If the agent proposes a change, the developer should be able to see the branch, the files touched, the tests run, and the assumptions made. Without that, the agent is not improving software delivery. It is just making confident text near a codebase.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://github.com/pwrdrvr/openclaw-codex-app-server" target="_blank" rel="noopener"><div class="source-title">pwrdrvr/openclaw-codex-app-server</div><div class="source-url">https://github.com/pwrdrvr/openclaw-codex-app-server</div></a></div>
+
+<h2>The bar I would use before trusting this</h2>
+<p>For OpenClaw readers, the useful question is not whether this exists as a package or repository. The useful question is whether it changes the operating model. Does it move the agent closer to a channel people already trust? Does it add a new permission boundary? Does it make debugging easier? Does it make deployment repeatable enough that a maintainer could support it after the launch week? That is the bar I am using here.</p>
+<p>I also do not want to over-claim the source. A repo, package, or release note is evidence of direction, not proof of adoption. The right way to read these posts is as a builder map: what became possible, where the integration boundary moved, and what a serious team would verify before putting it near real users.</p>
 
 </article>
 <footer class="footer"><p>Part of <a href="/">Awesome OpenClaw</a>. See the <a href="/directory">directory</a> and <a href="/use-cases">use cases</a>.</p></footer>
