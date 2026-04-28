@@ -58,6 +58,32 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',sys
 </div>
 </header>
 
+<figure class="post-diagram" style="margin:36px 0;padding:18px;border:1px solid var(--card-border);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));overflow:hidden">
+<svg role="img" aria-label="Diagram for Weixin Pulled OpenClaw Toward Mainstream Chat" viewBox="0 0 820 360" width="100%" style="display:block;border-radius:18px;background:#070707" xmlns="http://www.w3.org/2000/svg">
+<title>Weixin Pulled OpenClaw Toward Mainstream Chat operating map</title>
+<rect width="820" height="360" fill="#070707"/>
+<circle cx="72" cy="64" r="30" fill="#22C55E" opacity=".16"/><text x="72" y="71" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#22C55E">1</text>
+<text x="120" y="58" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#f5f5f5">Mainstream chat</text>
+<text x="120" y="84" font-family="JetBrains Mono,monospace" font-size="15" fill="#c7c7c7">read it as an operating boundary, not a logo announcement</text>
+<defs><marker id="arrow-6025092548079842882" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#22C55E"/></marker></defs>
+<rect x="58" y="134" width="188" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="152" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="18" font-weight="800" fill="#fff">Weixin user</text>
+<text x="152" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">input / source</text>
+<line x1="256" y1="175" x2="342" y2="175" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow-6025092548079842882)"/>
+<rect x="352" y="120" width="212" height="110" rx="22" fill="#111" stroke="#22C55E" stroke-width="2"/>
+<text x="458" y="164" text-anchor="middle" font-family="Inter,Arial" font-size="19" font-weight="900" fill="#fff">chat plugin</text>
+<text x="458" y="193" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#d6d6d6">policy • state • logs</text>
+<line x1="574" y1="175" x2="646" y2="175" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow-6025092548079842882)"/>
+<rect x="656" y="134" width="106" height="82" rx="18" fill="#0f0f0f" stroke="#2a2a2a"/>
+<text x="709" y="169" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#fff">bounded assistant</text>
+<text x="709" y="194" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#bdbdbd">output</text>
+<rect x="95" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="170" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">QR login</text><rect x="275" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="350" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">multi-account</text><rect x="455" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="530" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">media upload</text><rect x="635" y="248" width="150" height="42" rx="12" fill="#111" stroke="#303030"/><text x="710" y="274" text-anchor="middle" font-size="14" fill="#f4f4f4">session scope</text>
+<rect x="58" y="312" width="704" height="2" fill="#22C55E" opacity=".65"/>
+<text x="410" y="335" text-anchor="middle" font-family="Inter,Arial" font-size="15" fill="#eeeeee">Mainstream reach is valuable only if identity, sessions, and media handling are boringly reliable.</text>
+</svg>
+<figcaption style="margin-top:12px;color:var(--text);opacity:.82;font-size:.95rem">A simplified operating map for the post: where the user request enters, where the integration boundary sits, and what has to be true before the output is trusted.</figcaption>
+</figure>
+
 <div class="callout callout-info"><div class="callout-title">The mainstream signal</div><p>Weixin/WeChat is not just another chat app. Tencent’s FY2025 results list 1.418 billion combined monthly active accounts for Weixin and WeChat in Q4 2025. A Weixin channel for OpenClaw is therefore a distribution story first: agents are being pulled toward the default communication surface for a huge number of users.</p></div>
 <h2>The short version</h2>
 <p>The Weixin plugin matters because it takes OpenClaw out of developer workspace logic and into everyday messaging habits. The npm package describes QR-code login authorization, multiple WeChat accounts online at the same time, long-polling updates, message sending, media upload flow, typing status, and per-account session isolation.</p>
@@ -90,6 +116,14 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',sys
 <div class="checklist-item"><span class="checklist-box"></span><span>Require confirmation for purchases, external messages, file writes, and anything involving another person.</span></div>
 </div>
 <div class="callout callout-solution"><div class="callout-title">Takeaway</div><p>The Weixin plugin is the March signal that OpenClaw is following users into mainstream chat. The opportunity is reach. The engineering problem is identity, session isolation, media handling, and guardrails.</p></div>
+<h2>How I would read the diagram</h2>
+<p>The Weixin detail that deserves attention is not just scale. It is the combination of QR login, multiple accounts, media upload, typing state, and session isolation. Those are the places where a personal assistant either feels native or becomes risky.</p>
+<p>I would not launch a broad Weixin agent by starting with high-autonomy tasks. I would start with narrow commands, explicit confirmations, and easy ways to inspect what the agent remembered. In mainstream chat, the user experience is casual, but the engineering standard has to be stricter.</p>
+<h2>What would make this real</h2>
+<p>The practical test is whether the integration can be operated on a bad day. A good demo shows the happy path. A real OpenClaw component should show the boundary conditions: what happens when the source is slow, when the account changes, when the model is unsure, when the tool returns partial data, and when the user asks for something outside the allowed scope.</p>
+<p>That is why I keep coming back to the same operator questions: who owns the credential, where does the state live, what is logged, how is failure shown, and how does a human override the agent? If those answers are visible, the integration can be trusted gradually. If they are hidden, even a useful feature becomes hard to recommend.</p>
+<h2>The product bar I would use</h2>
+<p>I would not judge this by whether it can answer one impressive prompt. I would judge it by repeatability. Can another maintainer set it up from the docs? Can a user predict when the agent will act and when it will ask? Can the system explain what changed after an update? These are the small details that decide whether an agent project feels like infrastructure or a weekend automation.</p>
 <h2>Sources</h2>
 <div class="source-ref"><a href="https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin" target="_blank" rel="noopener"><div class="source-title">@tencent-weixin/openclaw-weixin on npm</div><div class="source-url">https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin</div></a></div>
 <div class="source-ref"><a href="https://static.www.tencent.com/uploads/2026/03/18/e6a646796d0d869acc76271c9ee1a6a5.pdf" target="_blank" rel="noopener"><div class="source-title">Tencent FY2025 and 4Q2025 results</div><div class="source-url">https://static.www.tencent.com/uploads/2026/03/18/e6a646796d0d869acc76271c9ee1a6a5.pdf</div></a></div>
