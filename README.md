@@ -82,6 +82,7 @@
 - [Alternatives & Competitors](#alternatives--competitors)
 - [Moltbook (AI Social Network)](#moltbook-ai-social-network)
 - [Skills & Plugins](#skills--plugins)
+  - [Setup Guides & Starters](#setup-guides--starters)
 - [Browser Automation](#browser-automation)
 - [Real-World Use Cases](#real-world-use-cases)
 - [Current OpenClaw Operating Patterns](#current-openclaw-operating-patterns)
@@ -647,6 +648,9 @@ docker compose run --rm openclaw-cli security audit --deep
 - [Docker Guide for Beginners - Medium](https://medium.com/@ozbillwang/run-openclaw-moltbot-clawdbot-safely-with-docker-a-practical-guide-for-beginners-94112a9b57be)
 - [docker-gentkit-openclaw](https://github.com/lentiancn/docker-gentkit-openclaw) - Docker image and scripts for running OpenClaw with persistent host-mounted state.
 - [Carapace](https://github.com/jhenderiks/carapace) - Hardened Docker Compose setup for OpenClaw with read-only root filesystem, dropped capabilities, and optional browser isolation.
+- [wodby/openclaw](https://github.com/wodby/openclaw) - Docker image for OpenClaw Gateway with versioned stability tags, amd64/arm64 builds, and entrypoint-generated configuration.
+- [OpenSandbox OpenClaw example](https://github.com/alibaba/OpenSandbox/tree/main/examples/openclaw) - Example for launching OpenClaw Gateway inside an OpenSandbox instance with restrictive network policy and configurable image, token, port, and timeout settings.
+- [OpenKruise Agents OpenClaw example](https://github.com/openkruise/agents/tree/master/examples/openclaw) - Kubernetes sandbox example for pre-warmed OpenClaw instances with persistent user data through volume claim templates.
 
 ---
 
@@ -895,6 +899,7 @@ Configure multiple agents with separate workspaces, personas, auth profiles, and
 - [Multi-Agent Docs](https://docs.openclaw.ai/concepts/multi-agent)
 - [Build Your Own AI Agent Team in 15 Minutes](https://ai2sql.io/how-to-build-your-own-ai-agent-team-with-openclaw-in-15-minutes)
 - [Antfarm](https://github.com/snarktank/antfarm) - Create an OpenClaw agent team from a command-line workflow.
+- [Agency Agents OpenClaw integration](https://github.com/msitarzewski/agency-agents/tree/main/integrations/openclaw) - Integration guide for converting agency-agent workspaces into OpenClaw agents and registering them with the local gateway.
 - [ClawTeam-OpenClaw](https://github.com/win4r/ClawTeam-OpenClaw) - Multi-agent swarm coordination adapted for OpenClaw.
 - [OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) - Research project for training agents through conversational feedback.
 - [openclaw-multi-agent-kit](https://github.com/raulvidis/openclaw-multi-agent-kit) - Templates for multi-agent teams, Telegram supergroups, shared context, and bot-to-bot workflows.
@@ -925,6 +930,7 @@ Configure multiple agents with separate workspaces, personas, auth profiles, and
 | **[Clawra](https://github.com/SumeLabs/clawra)** | Companion skill | Available | OpenClaw companion setup that installs a selfie skill and visual-response workflow for chat platforms |
 | **[HappyClaw](https://github.com/riba2534/happyclaw)** | Web | Available | Self-hosted multi-user local AI agent system inspired by OpenClaw-style agent operations |
 | **[CC Switch](https://github.com/farion1231/cc-switch)** | Desktop | Available | Tauri desktop manager for OpenClaw and other coding CLIs, with provider switching, MCP and skills management, sessions, and workspace editing. |
+| **[lucinate](https://github.com/lucinate-ai/lucinate)** | Cross-platform CLI/TUI | Available | Terminal-native chat client for OpenClaw Gateway and OpenAI-compatible endpoints with streaming responses, tool-call cards, agent management, cron browsing, and session workflows |
 
 ### Monitoring & Dashboards
 
@@ -955,6 +961,7 @@ Configure multiple agents with separate workspaces, personas, auth profiles, and
 | **[agenttrace](https://github.com/luoyuctl/agenttrace)** | Local TUI | Local-first session inspector for OpenClaw-style and other AI coding-agent logs, showing tokens, estimated cost, tool failures, latency, health, diffs, and CI gates |
 | **[Monitoring OpenClaw](https://github.com/vincentlefort/monitoring-openclaw)** | Community dashboard | Dashboard for an OpenClaw infrastructure stack with service status, trading bot status, recent trades, and capital history views |
 | **[OpenClaw Dash](https://github.com/Micar2024/openclaw-dash)** | Local macOS dashboard | Local diagnostic toolkit for monitoring OpenClaw Gateway, exporting privacy-masked support reports, and running pre-upgrade health checks |
+| **[OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor)** | Community dashboard | Vue and Node.js dashboard for OpenClaw Gateway status, sessions, token usage, message trends, and monitor API endpoints |
 
 ### Backup & Restore
 
@@ -1058,6 +1065,7 @@ tar -czvf ~/openclaw_backup_$(date +%Y%m%d).tar.gz -C "$HOME" .openclaw
 | [**Debot**](https://github.com/BotMesh/debot) | Rust lightweight | Cost-conscious | Rust+Python, auto conversation compaction, smart LLM router |
 | [**NanoClaw (original)**](https://github.com/qwibitai/nanoclaw) | Security-first | Apple container | 500 lines TypeScript, WhatsApp, Anthropic Agent SDK (7K+ stars) |
 | [**Autobot**](https://github.com/crystal-autobot/autobot) | Crystal ultra-fast | Speed and security oriented users | 2MB binary, ~5MB RAM, <10ms startup |
+| [**Secure OpenClaw**](https://github.com/ComposioHQ/secure-openclaw) | Messaging assistant | Messaging-platform operators | OpenClaw-like assistant gateway with allowlists, tool-use approvals, scheduled reminders, and Composio app integrations |
 | **[NullClaw](https://github.com/nullclaw/nullclaw)** | Zig lightweight runtime | Embedded and low-resource users | OpenClaw-style assistant infrastructure implemented as a Zig static binary with provider, channel, memory, tool, and gateway docs |
 
 ---
@@ -1132,6 +1140,7 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **OpenClaw Master Skills** | Curated OpenClaw skills collection maintained as a public GitHub repository | [GitHub](https://github.com/LeoYeAI/openclaw-master-skills) |
 | **Lossless Claw** | Lossless Context Management plugin for OpenClaw context compression and retention workflows | [GitHub](https://github.com/Martian-Engineering/lossless-claw) |
 | **mem9** | Memory plugin for OpenClaw agents | [GitHub](https://github.com/mem9-ai/mem9) |
+| **OpenViking OpenClaw Plugin** | Context-engine plugin that connects OpenClaw to OpenViking for remote memory, session archiving, semantic retrieval, and resource import workflows | [GitHub](https://github.com/volcengine/OpenViking/tree/main/examples/openclaw-plugin) |
 | **memory-lancedb-pro** | LanceDB memory plugin for OpenClaw with hybrid retrieval, reranking, multi-scope isolation, and a management CLI | [GitHub](https://github.com/CortexReach/memory-lancedb-pro) |
 | **MetaClaw** | Research project for conversational agent learning and evolution on OpenClaw-style agents | [GitHub](https://github.com/aiming-lab/MetaClaw) \| [paper](https://arxiv.org/abs/2603.17187) |
 | **AutoResearchClaw** | Research workflow project for idea-to-paper agents using OpenClaw and MetaClaw patterns | [GitHub](https://github.com/aiming-lab/AutoResearchClaw) |
@@ -1165,6 +1174,12 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **Oxylabs AI Studio Plugin** | OpenClaw plugin that adds Oxylabs AI Studio web search and fetch tools | [GitHub](https://github.com/oxylabs/oxylabs-ai-studio-openclaw) |
 | **Membase OpenClaw Plugin** | Persistent-memory plugin for OpenClaw using hybrid vector search and a knowledge graph | [GitHub](https://github.com/aristoapp/openclaw-membase) |
 | **n8n OpenClaw Nodes** | n8n community nodes for controlling OpenClaw Gateway sessions, messages, cron jobs, search, and commands from workflows | [GitHub](https://github.com/karmaniverous/n8n-nodes-openclaw) |
+
+### Setup Guides & Starters
+
+- [OpenClaw Personal Agent Starter Free](https://github.com/rbezumoff/openclaw-personal-agent-starter-free) - Starter repository for building a private Telegram assistant with OpenClaw, including setup checklist material and AGENTS.md/SOUL.md templates.
+- [OpenClaw setup guide I wish I had](https://github.com/ishwarjha/openclaw-setup-guide-i-wish-i-had) - Step-by-step OpenClaw setup and optimization guide covering install, models, memory, heartbeat, cron, channels, security, and use-case building.
+- [NetworkChuck OpenClaw setup](https://github.com/theNetworkChuck/openclaw-setup) - Companion guide for a VPS-based OpenClaw setup video, with ordered commands for install, Telegram pairing, cron jobs, skills, browser access, sub-agents, and security checks.
 
 ### Third-Party Platforms
 
