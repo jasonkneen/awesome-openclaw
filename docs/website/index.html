@@ -337,8 +337,17 @@ const NAV_MAP={
 
 async function loadReadme(){
 try{
-const res=await fetch('README.md');
-if(!res.ok) throw new Error('Failed to fetch README.md');
+const readmeUrls=[
+'./README.md',
+'/README.md',
+'https://raw.githubusercontent.com/rohitg00/awesome-openclaw/main/README.md'
+];
+let res;
+for(const url of readmeUrls){
+res=await fetch(url,{cache:'no-cache'}).catch(()=>null);
+if(res&&res.ok)break;
+}
+if(!res||!res.ok) throw new Error('Failed to fetch README.md');
 let md=await res.text();
 
 md=md.replace(/^<p align="center">[\s\S]*?<\/p>\s*/gm,'');
