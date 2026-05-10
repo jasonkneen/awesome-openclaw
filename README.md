@@ -340,6 +340,7 @@ These providers handle ALL the setup for you - no Docker, no terminal, no DevOps
 | **[Molty by Finna](https://molty.finna.ai)** | $19-99 | 30 sec | VM-isolated (Fly.io) | Multiple Molties per account, Mission Control (multi-agent coordination), GitHub backup sync, browser automation, auto-updates | 3-day free trial |
 | **[KinthAI](https://agents.kinthai.ai)** | $24.90 | Instant | Multi-tenant | Persistent per-user memory, multi-agent group chat (221 agents tested), agent marketplace, token budget built-in | Free tier available |
 | **[OpenClaw Launch](https://openclawlaunch.com)** | $20+ | < 1 min | Managed | One-click setup, management UI, multi-instance support | - |
+| **[RapidClaw](https://rapidclaw.dev)** | $29+ | Minutes | Managed | Managed OpenClaw hosting with opinionated defaults and no-Docker setup for non-technical operators | - |
 | **[ClawLaunch](https://clawlaunch.ai)** | Free (30d) / $9.49 | 60 sec | Varies by plan | Includes AI Credits. Hardened sandbox via gVisor. Free TTS pre-installed (Whisper). | 30-day free trial, 50% revshare affiliate program |
 | **[OpenClaw Setup](https://openclaw-setup.me)** | $3.9 (Solo) / $6.9 (Trio) | ~2 min | 1 CPU, 3-12 GB RAM | Full UI instance management (LLM providers, env vars, workspace and memory management), Telegram + Slack support, encrypted credentials, allowlist access control, per-model usage analytics | AWESOMEOPENCLAWSETUP (50% off first-time customers) |
 | **[Vessel](https://vesselofone.com)** | $35 | ~5 min | Dedicated VM | Secure, fully managed, zero-ops. VM-level isolation, tunnel-based networking (no exposed ports), automated security updates | - |
@@ -347,6 +348,7 @@ These providers handle ALL the setup for you - no Docker, no terminal, no DevOps
 | **[Clawdy](https://clawdy.app)** | $24+ | < 60 sec | Managed | Browser-based OpenClaw deployment with model selection, auth, SSL, and reverse proxy setup handled | - |
 | **[1ClickClaw](https://1clickclaw.app/)** | $49 | < 1 min | 2 vCPU, 2 GB RAM | OpenClaw hosting for Telegram, Discord, and WhatsApp bot deployments | - |
 | **[OctoClaw](https://octoclaw.ai)** | $19-59 | Minutes | Managed | OpenClaw-based hosted AI specialist agents for marketing, sales, and support workflows | - |
+| **[RapidClaw](https://rapidclaw.dev)** | $29+ | Minutes | Managed | Built for non-technical operators - no Docker, no API keys, opinionated defaults, deploys in minutes | - |
 
 ### Setup-as-a-Service (Freelancers)
 
