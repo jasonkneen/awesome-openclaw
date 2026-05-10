@@ -972,6 +972,7 @@ Configure multiple agents with separate workspaces, personas, auth profiles, and
 | **[Monitoring OpenClaw](https://github.com/vincentlefort/monitoring-openclaw)** | Community dashboard | Dashboard for an OpenClaw infrastructure stack with service status, trading bot status, recent trades, and capital history views |
 | **[OpenClaw Dash](https://github.com/Micar2024/openclaw-dash)** | Local macOS dashboard | Local diagnostic toolkit for monitoring OpenClaw Gateway, exporting privacy-masked support reports, and running pre-upgrade health checks |
 | **[OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor)** | Community dashboard | Vue and Node.js dashboard for OpenClaw Gateway status, sessions, token usage, message trends, and monitor API endpoints |
+| **[laboon-self-healing](https://github.com/aretaafandi16-ui/laboon-self-healing)** | Community | Self-healing OpenClaw health-check workflow with restart, remediation, and alert notification steps |
 
 ### Backup & Restore
 
