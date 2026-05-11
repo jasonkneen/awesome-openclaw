@@ -918,6 +918,8 @@ Configure multiple agents with separate workspaces, personas, auth profiles, and
 - [OpenClaw Agents](https://github.com/shenhao-stu/openclaw-agents) - One-command multi-agent setup with specialized agents, group routing, and safe config merge.
 - [HiClaw](https://github.com/agentscope-ai/HiClaw) - Collaborative multi-agent OS with human-in-the-loop coordination through Matrix rooms.
 - [Aurogen](https://github.com/UniRound-Tec/Aurogen) - OpenClaw-compatible multi-agent reimplementation with web-panel configuration, dynamic modules, and ClawHub skill import support.
+- [edict](https://github.com/cft0808/edict) - OpenClaw multi-agent orchestration system with specialized agent roles, a dashboard, model configuration, and audit logs.
+- [Golutra](https://github.com/golutra/golutra) - Multi-agent orchestration workspace that includes OpenClaw alongside other CLI agents for parallel tasks and long-running workflows.
 
 ### Companion Apps
 
@@ -941,6 +943,8 @@ Configure multiple agents with separate workspaces, personas, auth profiles, and
 | **[HappyClaw](https://github.com/riba2534/happyclaw)** | Web | Available | Self-hosted multi-user local AI agent system inspired by OpenClaw-style agent operations |
 | **[CC Switch](https://github.com/farion1231/cc-switch)** | Desktop | Available | Tauri desktop manager for OpenClaw and other coding CLIs, with provider switching, MCP and skills management, sessions, and workspace editing. |
 | **[lucinate](https://github.com/lucinate-ai/lucinate)** | Cross-platform CLI/TUI | Available | Terminal-native chat client for OpenClaw Gateway and OpenAI-compatible endpoints with streaming responses, tool-call cards, agent management, cron browsing, and session workflows |
+| **[Qclaw](https://github.com/qiuzhi2046/Qclaw)** | Desktop | Available | GUI helper for OpenClaw setup, environment checks, model configuration, and update workflows. |
+| **[nexu](https://github.com/nexu-io/nexu)** | Desktop | Available | Local-first desktop client for connecting OpenClaw agents to WeChat, Feishu, Slack, Discord, and related IM channels. |
 
 ### Monitoring & Dashboards
 
@@ -974,6 +978,8 @@ Configure multiple agents with separate workspaces, personas, auth profiles, and
 | **[OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor)** | Community dashboard | Vue and Node.js dashboard for OpenClaw Gateway status, sessions, token usage, message trends, and monitor API endpoints |
 | **[laboon-self-healing](https://github.com/aretaafandi16-ui/laboon-self-healing)** | Community | Self-healing OpenClaw health-check workflow with restart, remediation, and alert notification steps |
 | **[AgentPulse](https://agentpulse.dev)** | Third-party | LLM cost and observability dashboard for tokens, latency, errors, and model usage across agent workloads |
+| **[tokscale](https://github.com/junhoyeo/tokscale)** | Usage CLI | Token-usage tracker that reads OpenClaw agent data paths alongside other coding-agent tools and renders CLI usage reports. |
+| **[ClawPanel](https://github.com/zhaoxinyi02/ClawPanel)** | Management panel | Go-based OpenClaw management panel for channel runtime management, logs, and external gateway operations. |
 
 ### Backup & Restore
 
@@ -1186,8 +1192,10 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **Feishu Bot Chat Plugin** | Feishu group-chat plugin that lets multiple OpenClaw bots discover each other and communicate through bot mentions | [GitHub](https://github.com/Leochens/feishu-bot-chat-plugin) |
 | **SearXNG Search Plugin** | OpenClaw web-search plugin for self-hosted SearXNG instances | [GitHub](https://github.com/5p00kyy/openclaw-plugin-searxng) |
 | **Oxylabs AI Studio Plugin** | OpenClaw plugin that adds Oxylabs AI Studio web search and fetch tools | [GitHub](https://github.com/oxylabs/oxylabs-ai-studio-openclaw) |
-| **Membase OpenClaw Plugin** | Persistent-memory plugin for OpenClaw using hybrid vector search and a knowledge graph | [GitHub](https://github.com/aristoapp/openclaw-membase) |
-| **n8n OpenClaw Nodes** | n8n community nodes for controlling OpenClaw Gateway sessions, messages, cron jobs, search, and commands from workflows | [GitHub](https://github.com/karmaniverous/n8n-nodes-openclaw) |
+| **[Membase OpenClaw Plugin](https://github.com/aristoapp/openclaw-membase)** | Persistent-memory plugin for OpenClaw using hybrid vector search and a knowledge graph | [GitHub](https://github.com/aristoapp/openclaw-membase) |
+| **[n8n OpenClaw Nodes](https://github.com/karmaniverous/n8n-nodes-openclaw)** | n8n community nodes for controlling OpenClaw Gateway sessions, messages, cron jobs, search, and commands from workflows | [GitHub](https://github.com/karmaniverous/n8n-nodes-openclaw) |
+| **[skillshare](https://github.com/runkids/skillshare)** | Cross-tool skill sync CLI with OpenClaw support for sharing skill installs across machines and agent tools | [GitHub](https://github.com/runkids/skillshare) |
+| **[Build With Claude](https://github.com/davepoon/buildwithclaude)** | Public directory for skills, agents, commands, hooks, plugins, and marketplace collections that includes OpenClaw-related entries | [GitHub](https://github.com/davepoon/buildwithclaude) |
 
 ### Setup Guides & Starters
 
@@ -1226,6 +1234,9 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **[Chatu WebHub](https://github.com/chatu-ai/webhub)** | Website channel | Channel plugin that connects OpenClaw to custom websites through HTTP and WebSocket interfaces |
 | **[MeshClaw](https://github.com/Seeed-Solution/MeshClaw)** | Meshtastic channel | OpenClaw channel plugin that bridges agents with Meshtastic LoRa mesh networks |
 | **[FoloToy OpenClaw Plugin](https://github.com/FoloToy/folotoy-openclaw-plugin)** | Smart toy channel | MQTT channel plugin that connects FoloToy devices to OpenClaw agents |
+| **[Umbrel](https://github.com/getumbrel/umbrel)** | Home server OS | Self-hosted home-server OS whose App Store description includes running OpenClaw alongside other local apps. |
+| **[CordysCRM](https://github.com/1Panel-dev/CordysCRM)** | CRM platform | Open-source CRM with documented OpenClaw skills support for AI sales-assistant workflows. |
+| **[Casdoor](https://github.com/casdoor/casdoor)** | IAM and gateway | Agent-first IAM, MCP gateway, and authentication server whose public metadata lists OpenClaw support. |
 
 ### Install a Skill
 
@@ -1363,6 +1374,8 @@ Current OpenClaw operations include OpenTelemetry, Prometheus, dashboards, model
 - [OpenClaw Course](https://github.com/kiankyars/openclawcourse) - One-hour crash course with a public lesson index for learning OpenClaw basics.
 - [Build Your Own OpenClaw](https://github.com/czl9707/build-your-own-openclaw) - Step-by-step tutorial with runnable code that builds a lightweight OpenClaw-style agent across chat, tools, skills, channels, cron, multi-agent routing, and memory.
 - [Awesome OpenClaw Tutorial](https://github.com/xianyu110/awesome-openclaw-tutorial) - Chinese OpenClaw tutorial repository with installation, configuration, current-version notes, and scenario walkthroughs.
+- [AI Coding Guide Zh](https://github.com/KimYx0207/AI-Coding-Guide-Zh) - Chinese tutorial collection that covers OpenClaw alongside Claude Code and Codex learning paths.
+- [hello-claw](https://github.com/datawhalechina/hello-claw) - Chinese OpenClaw learning path covering setup, skills, channels, source walkthroughs, and multi-agent patterns.
 
 ### Reviews
 
@@ -1393,6 +1406,7 @@ Current OpenClaw operations include OpenTelemetry, Prometheus, dashboards, model
 - [vLLM on AMD Free](https://www.amd.com/en/developer/resources/technical-articles/2026/openclaw-with-vllm-running-for-free-on-amd-developer-cloud-.html)
 - [pizero-openclaw](https://github.com/sebastianvkl/pizero-openclaw) - Raspberry Pi Zero voice assistant that streams transcribed speech through an OpenClaw gateway and renders responses on a PiSugar WhisPlay LCD.
 - [luci-app-openclaw](https://github.com/10000ge10000/luci-app-openclaw) - OpenWrt LuCI management plugin for installing, configuring, and controlling OpenClaw on router hardware.
+- [bailing](https://github.com/wwbin2017/bailing) - Chinese voice-assistant project that uses OpenClaw as a tool orchestration layer for higher-level agent tasks.
 
 ### Integration Guides
 
