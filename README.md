@@ -816,6 +816,20 @@ docker compose run --rm openclaw-cli security audit --deep
 | **Olvid** | [GitHub](https://github.com/olvid-io/openclaw-channel-olvid) | Olvid channel credentials | Olvid channel plugin for OpenClaw |
 | **TrueConf** | [GitHub](https://github.com/TrueConf/trueconf-openclaw-channel) | TrueConf app credentials | TrueConf channel plugin for OpenClaw |
 | **XMTP** | [GitHub](https://github.com/tantodefi/xmtp-openclaw-channel) | XMTP wallet / app credentials | XMTP channel plugin for OpenClaw messaging workflows |
+| **Discord npm package** | [npm](https://www.npmjs.com/package/@openclaw/discord) | Discord bot credentials | OpenClaw Discord channel plugin published through npm |
+| **QQ Bot npm package** | [npm](https://www.npmjs.com/package/@openclaw/qqbot) | QQ bot credentials | OpenClaw QQ Bot channel plugin published through npm |
+| **Twitch npm package** | [npm](https://www.npmjs.com/package/@openclaw/twitch) | Twitch app credentials | OpenClaw Twitch channel plugin for routing chat events into an OpenClaw agent |
+| **Tlon / Urbit npm package** | [npm](https://www.npmjs.com/package/@openclaw/tlon) | Tlon / Urbit credentials | OpenClaw Tlon/Urbit channel plugin |
+| **Voice Call npm package** | [npm](https://www.npmjs.com/package/@openclaw/voice-call) | Voice provider credentials | OpenClaw voice-call plugin published through npm |
+| **Brave plugin package** | [npm](https://www.npmjs.com/package/@openclaw/brave-plugin) | Browser plugin config | OpenClaw Brave plugin package |
+| **Diff Viewer package** | [npm](https://www.npmjs.com/package/@openclaw/diffs) | Plugin config | OpenClaw diff viewer plugin package |
+| **Diagnostics OTEL package** | [npm](https://www.npmjs.com/package/@openclaw/diagnostics-otel) | OpenTelemetry config | OpenClaw diagnostics OpenTelemetry exporter package |
+| **LarkSuite npm package** | [npm](https://www.npmjs.com/package/@larksuite/openclaw-lark) | Lark / Feishu app credentials | Official Lark/Feishu channel plugin package with documented security warnings |
+| **OriginTrail DKG Adapter** | [npm](https://www.npmjs.com/package/@origintrail-official/dkg-adapter-openclaw) | DKG node config | Adapter that connects a DKG V10 node and chat bridge to an OpenClaw agent |
+| **Dragon Workbench Channel** | [npm](https://www.npmjs.com/package/@efengx/openclaw-channel-dragon) | Dragon workbench config | Channel plugin that bridges OpenClaw outbound text to the Dragon workbench WebSocket protocol |
+| **DMWork Channel** | [npm](https://www.npmjs.com/package/openclaw-channel-dmwork) | DMWork credentials | WuKongIM WebSocket channel plugin for OpenClaw messaging workflows |
+| **Ozaiya Chat Channel** | [npm](https://www.npmjs.com/package/@ozaiya/openclaw-channel) | Ozaiya account credentials | Channel plugin for connecting OpenClaw agents to Ozaiya encrypted group chats |
+| **Zalo npm package** | [npm](https://www.npmjs.com/package/@openclaw/zalo) | Zalo credentials | OpenClaw Zalo channel plugin published through npm |
 
 ### Local LLM Integration
 
@@ -1322,6 +1336,14 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **[Umbrel](https://github.com/getumbrel/umbrel)** | Home server OS | Self-hosted home-server OS whose App Store description includes running OpenClaw alongside other local apps. |
 | **[CordysCRM](https://github.com/1Panel-dev/CordysCRM)** | CRM platform | Open-source CRM with documented OpenClaw skills support for AI sales-assistant workflows. |
 | **[Casdoor](https://github.com/casdoor/casdoor)** | IAM and gateway | Agent-first IAM, MCP gateway, and authentication server whose public metadata lists OpenClaw support. |
+| **[MateClaw](https://github.com/matevip/mateclaw)** | Team agent runtime | Spring AI Alibaba based agent runtime with multi-agent orchestration, memory, skills, and multi-channel support |
+| **[OpenClaw Kubernetes Operator](https://github.com/openclaw-rocks/openclaw-operator)** | Kubernetes operator | Operator for deploying and managing OpenClaw agent instances on Kubernetes with lifecycle, isolation, storage, and observability controls |
+| **[ClawHub CLI](https://www.npmjs.com/package/clawhub)** | Skill registry CLI | CLI for installing, updating, searching, and publishing skills and OpenClaw packages |
+| **[OpenClaw Plugin Inspector](https://www.npmjs.com/package/@openclaw/plugin-inspector)** | Compatibility checker | Offline compatibility checker for OpenClaw plugin packages and fixture suites |
+| **[OpenClaw Docker Sync](https://github.com/dr34m-cn/openclaw-docker)** | Docker image sync | GitHub Actions based sync from the official OpenClaw container image to Docker Hub |
+| **[OpenClaw Lark Multi-Agent](https://github.com/hackerphysics/openclaw-lark-multi-agent)** | Lark bridge | Multi-bot Lark/Feishu bridge that routes bot identities to OpenClaw Gateway sessions with isolated conversation state |
+| **[OpenClaw Dashboard Live Data](https://github.com/natanaelhx/openclaw-dashboard-live-data)** | Dashboard data feed | JSON data feed repository for an OpenClaw Vercel dashboard |
+| **[OpenClaw Shared Docs](https://github.com/dnd5fj5gjy-bit/openclaw-shared-docs)** | Workspace docs | Auto-published documentation from OpenClaw agent workspaces |
 
 ### Install a Skill
 
