@@ -702,7 +702,7 @@ docker compose run --rm openclaw-cli security audit --deep
 
 | Tool | Description | Source |
 |------|-------------|--------|
-| [APort Agent Guardrails](https://aport.io) | Pre-action authorization guardrails for AI agents and MCP/tool-use workflows. | Runtime authorization guardrails |
+| [APort Agent Guardrails](https://github.com/aporthq/aport-agent-guardrails) | Pre-action authorization guardrails for OpenClaw agents using plugin hooks and policy checks. | [OpenClaw docs](https://github.com/aporthq/aport-agent-guardrails/blob/main/docs/frameworks/openclaw.md) |
 | **ClawSec** | Complete security skill suite by Prompt Security | [GitHub](https://github.com/prompt-security/clawsec) |
 | **ClawBands** | Security middleware - intercepts tool execution, human-in-the-loop approval for dangerous actions | [GitHub](https://github.com/SeyZ/clawbands) |
 | **ClawGuard** | Permission manifests, runtime enforcement, sandboxing, audit logging with hash-chaining | [GitHub](https://github.com/newtro/ClawGuard) |
@@ -1331,6 +1331,29 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **[openclaw-skill-optimizer](https://www.npmjs.com/package/openclaw-skill-optimizer)** | Package for analyzing and optimizing OpenClaw skill performance | [npm](https://www.npmjs.com/package/openclaw-skill-optimizer) |
 | **[openclaw-crawleo-skill](https://www.npmjs.com/package/openclaw-crawleo-skill)** | Self-contained OpenClaw skill package for Crawleo web search and crawling workflows | [npm](https://www.npmjs.com/package/openclaw-crawleo-skill) |
 | **[rugbyclaw](https://www.npmjs.com/package/rugbyclaw)** | Rugby scores, fixtures, and results CLI with an OpenClaw skill package | [npm](https://www.npmjs.com/package/rugbyclaw) |
+| **[@indexnetwork/openclaw-plugin](https://www.npmjs.com/package/@indexnetwork/openclaw-plugin)** | OpenClaw plugin for Index Network people-discovery workflows | [npm](https://www.npmjs.com/package/@indexnetwork/openclaw-plugin) |
+| **[@clawchatsai/connector](https://www.npmjs.com/package/@clawchatsai/connector)** | OpenClaw plugin for a P2P tunnel and local API bridge to ClawChats | [npm](https://www.npmjs.com/package/@clawchatsai/connector) |
+| **[aamp-openclaw-plugin](https://www.npmjs.com/package/aamp-openclaw-plugin)** | Agent Mail Protocol plugin that gives OpenClaw an AAMP mailbox identity for receiving and replying to task messages | [npm](https://www.npmjs.com/package/aamp-openclaw-plugin) |
+| **[@aauth/mcp-openclaw](https://www.npmjs.com/package/@aauth/mcp-openclaw)** | OpenClaw plugin for connecting to AAuth-authenticated MCP servers | [npm](https://www.npmjs.com/package/@aauth/mcp-openclaw) |
+| **[orca-openclaw-plugin](https://www.npmjs.com/package/orca-openclaw-plugin)** | OpenClaw plugin wrapper for Orca runtime guardrail checks | [npm](https://www.npmjs.com/package/orca-openclaw-plugin) |
+| **[agent-control-openclaw-plugin](https://www.npmjs.com/package/agent-control-openclaw-plugin)** | Plugin that connects OpenClaw tool catalogs and calls to Agent Control policy workflows | [npm](https://www.npmjs.com/package/agent-control-openclaw-plugin) |
+| **[imclaw](https://www.npmjs.com/package/imclaw)** | Agent-to-agent instant messaging channel extension for OpenClaw | [npm](https://www.npmjs.com/package/imclaw) |
+| **[@perkos/perkos-a2a](https://www.npmjs.com/package/@perkos/perkos-a2a)** | A2A protocol communication plugin for OpenClaw agent-to-agent workflows | [npm](https://www.npmjs.com/package/@perkos/perkos-a2a) |
+| **[@agnt-rcpt/openclaw](https://www.npmjs.com/package/@agnt-rcpt/openclaw)** | Plugin for cryptographically signed audit trails for OpenClaw agent actions | [npm](https://www.npmjs.com/package/@agnt-rcpt/openclaw) |
+| **[@spikelabs/lobster-shell-plugin](https://www.npmjs.com/package/@spikelabs/lobster-shell-plugin)** | Plugin for connecting an OpenClaw agent to Lobster Shell cloud workflows | [npm](https://www.npmjs.com/package/@spikelabs/lobster-shell-plugin) |
+| **[@jiggai/kitchen](https://www.npmjs.com/package/@jiggai/kitchen)** | Web dashboard package for OpenClaw agent teams, workflows, and automation | [npm](https://www.npmjs.com/package/@jiggai/kitchen) |
+| **[@meego-harness/openclaw-worker](https://www.npmjs.com/package/@meego-harness/openclaw-worker)** | Native OpenClaw plugin that bridges a fixed OpenClaw agent to Meego harness workers | [npm](https://www.npmjs.com/package/@meego-harness/openclaw-worker) |
+| **[@clawlauncher/claw-activity-monitor](https://www.npmjs.com/package/@clawlauncher/claw-activity-monitor)** | Plugin that streams OpenClaw agent activity to the Claw Launcher dashboard | [npm](https://www.npmjs.com/package/@clawlauncher/claw-activity-monitor) |
+| **[@inline-openclaw/inline](https://www.npmjs.com/package/@inline-openclaw/inline)** | Channel plugin for interacting with an OpenClaw agent through Inline | [npm](https://www.npmjs.com/package/@inline-openclaw/inline) |
+| **[@synadia-ai/nats-channel](https://www.npmjs.com/package/@synadia-ai/nats-channel)** | NATS channel plugin that makes OpenClaw agents discoverable through Synadia Agent Protocol workflows | [npm](https://www.npmjs.com/package/@synadia-ai/nats-channel) |
+| **[@gitopenclaw/connect](https://www.npmjs.com/package/@gitopenclaw/connect)** | Runtime connector that streams OpenClaw agent events for monitoring, alerting, and kill-switch control | [npm](https://www.npmjs.com/package/@gitopenclaw/connect) |
+| **[clawcal](https://www.npmjs.com/package/clawcal)** | iCal feed package for OpenClaw agent activity | [npm](https://www.npmjs.com/package/clawcal) |
+| **[@handlebar/openclaw](https://www.npmjs.com/package/@handlebar/openclaw)** | Governance plugin package for OpenClaw agents | [npm](https://www.npmjs.com/package/@handlebar/openclaw) |
+| **[@cogineai/clawpacker](https://www.npmjs.com/package/@cogineai/clawpacker)** | CLI for inspecting, exporting, importing, and validating portable OpenClaw agent and workspace templates | [npm](https://www.npmjs.com/package/@cogineai/clawpacker) |
+| **[playclaw](https://www.npmjs.com/package/playclaw)** | Plugin package for connecting OpenClaw agents to PlayClaw testing playground workflows | [npm](https://www.npmjs.com/package/playclaw) |
+| **[openclaw-agent-dashboard](https://www.npmjs.com/package/openclaw-agent-dashboard)** | Visual multi-agent dashboard plugin package for OpenClaw | [npm](https://www.npmjs.com/package/openclaw-agent-dashboard) |
+| **[@botmem/openclaw-plugin](https://www.npmjs.com/package/@botmem/openclaw-plugin)** | OpenClaw plugin for Botmem personal-memory search across connected user data sources | [npm](https://www.npmjs.com/package/@botmem/openclaw-plugin) |
+| **[@oda-agent/openclaw-plugin](https://www.npmjs.com/package/@oda-agent/openclaw-plugin)** | OpenClaw plugin for grocery-planning workflows with Oda automation boundaries | [npm](https://www.npmjs.com/package/@oda-agent/openclaw-plugin) |
 
 ### Setup Guides & Starters
 
