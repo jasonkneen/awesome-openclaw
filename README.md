@@ -1531,7 +1531,7 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **@vulcanen/openclaw-monitor** | Real-time monitoring console package for OpenClaw runtime status and telemetry views | [npm](https://www.npmjs.com/package/@vulcanen/openclaw-monitor) |
 | **@a1hvdy/cc-openclaw** | OpenClaw bridge plugin for routing CLI assistant traffic through an OpenAI-compatible HTTP interface | [npm](https://www.npmjs.com/package/@a1hvdy/cc-openclaw) |
 | **@openclaw/voice-call** | Voice-call channel plugin for OpenClaw integrations using Twilio, Telnyx, and Plivo transports | [npm](https://www.npmjs.com/package/@openclaw/voice-call) |
-| **EQVPS** | API-native, pay-per-use VPS an agent can provision and manage over MCP — list plans, order, power, reinstall, set hostname, cancel. | [ClawHub](https://clawhub.ai/poiuyhje/eqvps) |
+| **EQVPS** | API-native, pay-per-use VPS skill for OpenClaw with MCP tools for listing plans, ordering servers after confirmation, power control, reinstall, hostname updates, and cancellation. | [ClawHub](https://clawhub.ai/poiuyhje/eqvps) |
 
 ### Setup Guides & Starters
 
