@@ -860,6 +860,22 @@ docker compose run --rm openclaw-cli security audit --deep
 | **OpenClaw Kakao** | [GitHub](https://github.com/tornado1014/openclaw-kakao) | KakaoTalk / bridge config | KakaoTalk bridge that routes messages through an OpenClaw Gateway. Review platform policy before enabling account automation. |
 | **clawdbot-channel-linq** | [GitHub](https://github.com/nickvasilescu/clawdbot-channel-linq) | Linq Partner API credentials | iMessage, RCS, and SMS channel for Clawdbot through the Linq Partner API, with webhook-based inbound delivery. |
 | **Relay Spine** | [GitHub](https://github.com/CzsGit/wechat-openclaw-plugin) | WeChat / webhook credentials | OpenClaw WeChat channel bridge with QR-authenticated socket sessions and encrypted webhook handling. Review platform policy before enabling account automation. |
+| **VK npm package** | [npm](https://www.npmjs.com/package/@openclaw-vk/vk) | VK community bot credentials | VKontakte channel plugin for OpenClaw using the VK Bots Long Poll API |
+| **Twilio WhatsApp Channel** | [npm](https://www.npmjs.com/package/@srinathh/openclaw-channel-twilio-whatsapp) | Twilio account and webhook config | Twilio WhatsApp channel plugin for OpenClaw with deployment notes for public HTTPS webhooks |
+| **Lansenger Channel** | [npm](https://www.npmjs.com/package/@lansenger-pm/openclaw-lansenger-channel) | Lansenger app credentials | Lansenger enterprise messaging channel plugin for OpenClaw with WebSocket inbound and HTTP outbound delivery |
+| **DingTalk Stream Package** | [npm](https://www.npmjs.com/package/@largezhou/ddingtalk) | DingTalk robot credentials | DingTalk channel package for OpenClaw using Stream mode and multi-account routing |
+| **DingClaw Package** | [npm](https://www.npmjs.com/package/@soimy/dingtalk) | DingTalk app credentials | DingTalk channel plugin for OpenClaw with documented OpenClaw version compatibility |
+| **BridgeX Channel** | [npm](https://www.npmjs.com/package/@transplane/openclaw-bridgex) | BridgeX endpoint config | BridgeX channel plugin for agent-to-agent and human-to-agent OpenClaw messaging |
+| **OpenClaw WebSocket Channel** | [npm](https://www.npmjs.com/package/@zf-tech/openclaw-websocket) | WebSocket channel config | JSON-over-WebSocket chat channel plugin for custom OpenClaw clients |
+| **MeepaChat Channel** | [npm](https://www.npmjs.com/package/@meepa/meepachat-openclaw) | MeepaChat gateway credentials | Self-hosted MeepaChat channel plugin for OpenClaw using WebSocket inbound and REST outbound paths |
+| **NIM Channel** | [npm](https://www.npmjs.com/package/@nimsuite/openclaw-nim-channel) | NetEase IM credentials | NetEase IM channel plugin for OpenClaw P2P, group, and QChat conversations |
+| **HelloAgent Channel** | [npm](https://www.npmjs.com/package/@helloagentai/openclaw) | HelloAgent relay config | Relay-backed messaging channel plugin for connecting OpenClaw assistants to HelloAgent |
+| **Friday Next Channel** | [npm](https://www.npmjs.com/package/@syengup/friday-channel-next) | Apple channel config | Friday Next Apple channel plugin for OpenClaw messaging workflows |
+| **Sider Chrome Channel** | [npm](https://www.npmjs.com/package/@hywkp/test-openclaw-sider) | Chrome extension config | Chrome channel plugin package for connecting OpenClaw through the Sider Chrome extension |
+| **WorkClaw Channel** | [npm](https://www.npmjs.com/package/@workclaw/openclaw-workclaw) | WorkClaw platform credentials | Enterprise communications channel plugin for OpenClaw workflows |
+| **Chat4000 Channel** | [npm](https://www.npmjs.com/package/@chat4000/openclaw-plugin) | Chat4000 relay config | E2E relay-based channel plugin for routing Chat4000 messages through OpenClaw |
+| **Aephix Channel** | [npm](https://www.npmjs.com/package/@fateinabox/aephix-openclaw) | Aephix chat config | Native Aephix chat channel provider for OpenClaw integrations |
+| **Xiaoyi Channel** | [npm](https://www.npmjs.com/package/@ynhcj/xiaoyi-channel) | Xiaoyi A2A config | Xiaoyi A2A protocol channel plugin for OpenClaw |
 
 ### Local LLM Integration
 
@@ -1531,6 +1547,24 @@ Created by OpenClaw agent "Clawd Clawderberg" (built by Matt Schlicht, Cofounder
 | **@vulcanen/openclaw-monitor** | Real-time monitoring console package for OpenClaw runtime status and telemetry views | [npm](https://www.npmjs.com/package/@vulcanen/openclaw-monitor) |
 | **@a1hvdy/cc-openclaw** | OpenClaw bridge plugin for routing CLI assistant traffic through an OpenAI-compatible HTTP interface | [npm](https://www.npmjs.com/package/@a1hvdy/cc-openclaw) |
 | **@openclaw/voice-call** | Voice-call channel plugin for OpenClaw integrations using Twilio, Telnyx, and Plivo transports | [npm](https://www.npmjs.com/package/@openclaw/voice-call) |
+| **@persistio/openclaw-plugin** | OpenClaw-native long-term memory plugin with explicit recall and store tools backed by Persistio | [npm](https://www.npmjs.com/package/@persistio/openclaw-plugin) |
+| **@posthog/openclaw** | PostHog LLM Analytics plugin for capturing OpenClaw model-generation and tool-call telemetry | [npm](https://www.npmjs.com/package/@posthog/openclaw) |
+| **@paleo/openclaw-slack-mock** | Synthetic Slack-shaped channel plugin for automated OpenClaw test scenarios without sending live Slack messages | [npm](https://www.npmjs.com/package/@paleo/openclaw-slack-mock) |
+| **openclaw-tavily** | Tavily web tools plugin exposing search, extract, crawl, map, and research tools to OpenClaw | [npm](https://www.npmjs.com/package/openclaw-tavily) |
+| **@korveo/openclaw** | Local-first OpenClaw span exporter for viewing diagnostics from the OpenTelemetry pipeline in Korveo | [npm](https://www.npmjs.com/package/@korveo/openclaw) |
+| **@agentlas/openclaw** | Plugin package for connecting OpenClaw to Agentlas notes and knowledge-extraction workflows | [npm](https://www.npmjs.com/package/@agentlas/openclaw) |
+| **@nextclaw/openclaw-compat** | Compatibility layer for using OpenClaw plugin interfaces from NextClaw projects | [npm](https://www.npmjs.com/package/@nextclaw/openclaw-compat) |
+| **@scholai/openclaw-scholai** | Courseware plugin package for OpenClaw article-generation workflows through Scholai | [npm](https://www.npmjs.com/package/@scholai/openclaw-scholai) |
+| **@scholai/openclaw-scholai-tools** | Onboarding CLI for installing, inspecting, and updating Scholai OpenClaw plugins | [npm](https://www.npmjs.com/package/@scholai/openclaw-scholai-tools) |
+| **@listenai/openclaw-xiaoling** | Xiaoling AI plugin package for OpenClaw voice and assistant workflows | [npm](https://www.npmjs.com/package/@listenai/openclaw-xiaoling) |
+| **@a5c-ai/hooks-mux-adapter-openclaw** | Harness adapter that connects OpenClaw to the hooks-mux system | [npm](https://www.npmjs.com/package/@a5c-ai/hooks-mux-adapter-openclaw) |
+| **@agent-vm/openclaw-gateway** | Package for running the OpenClaw gateway lifecycle inside an Agent VM environment | [npm](https://www.npmjs.com/package/@agent-vm/openclaw-gateway) |
+| **@alfe.ai/openclaw-sync** | Backup and sync skill for OpenClaw agent workspaces | [npm](https://www.npmjs.com/package/@alfe.ai/openclaw-sync) |
+| **openclaw-webchat-server** | Browser WebSocket relay server for connecting webchat users to OpenClaw agents | [npm](https://www.npmjs.com/package/openclaw-webchat-server) |
+| **@riddledc/openclaw-riddledc** | OpenClaw integration package for RiddleDC workflows with no-secrets setup notes | [npm](https://www.npmjs.com/package/@riddledc/openclaw-riddledc) |
+| **@onequery/openclaw-plugin** | OneQuery plugin package for OpenClaw workflows | [npm](https://www.npmjs.com/package/@onequery/openclaw-plugin) |
+| **@parall/openclaw-agent** | Bootstrap wrapper that prepares per-agent OpenClaw state before launching Parall agents | [npm](https://www.npmjs.com/package/@parall/openclaw-agent) |
+| **@watchline/openclaw-plugin** | Delivery adapter for receiving matched Watchline events in OpenClaw workflows | [npm](https://www.npmjs.com/package/@watchline/openclaw-plugin) |
 | **EQVPS** | API-native, pay-per-use VPS skill for OpenClaw with MCP tools for listing plans, ordering servers after confirmation, power control, reinstall, hostname updates, and cancellation. | [ClawHub](https://clawhub.ai/poiuyhje/eqvps) |
 
 ### Setup Guides & Starters
